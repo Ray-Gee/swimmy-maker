@@ -1,0 +1,238 @@
+.spread {
+    
+    .spread__wrap {
+        padding: 50px 0;        
+
+        .spread__heading img{
+            width: 600px;
+            position: relative;
+            left: calc(50% - 300px);
+        }
+        
+        .spread__content {
+            display: flex;
+            
+            .circles {
+                display: flex;
+                position: relative;
+                left: calc(50% - 450px);
+                
+                .maker-img {
+                    height: 148px;
+                    position: relative;
+                    top: 45px;
+                }
+                
+                .dotted {
+                    @include dotted-line;
+                    position: relative;
+                    top: 120px;
+                }
+                
+                .spread-circle {
+                    position: relative;
+                    p {
+                        font-size: 11px;
+                    }
+                    
+                    .spread-img {
+                        width: 280px;
+                    }
+                    
+                    .project-manager {
+                        position: absolute;
+                        top: 7px;
+                        left: 88px;
+                        
+                        .gray-circle {
+                            position: absolute;
+                            width: 110px;
+                        }
+                        
+                        &__content {
+                            text-align: center;
+                            width: 70px;
+                            position: absolute;
+                            top: 15px;
+                            left: 20px;
+                        }
+
+                        .arrow {
+                            position: relative;
+                            top: 85px;
+                            left: 80px;
+                            width: 90%;
+                            transform:rotate(-40deg);
+                            z-index: 1;
+                        }
+                    }
+                    
+                    .spread-projection {
+                        position: absolute;
+                        top: 15px;
+                        left: 100px;
+                        
+                        .gray-circle {
+                            position: absolute;
+                            width: 110px;
+                            top: 100px;
+                            left: 50px;
+                        }
+                        
+                        &__content {
+                            text-align: center;
+                            width: 80px;
+                            position: absolute;
+                            top: 121px;
+                            left: 67px;
+                        }
+
+                        .arrow {
+                            position: relative;
+                            top: 120px;
+                            left: 30px;
+                            transform:rotate(90deg);
+                            z-index: 1;
+                        }
+                    }
+
+                    .spread-calculator {
+                        position: absolute;
+                        top: 13px;
+                        left: -30px;
+                        
+                        .gray-circle {
+                            position: absolute;
+                            width: 110px;
+                            top: 100px;
+                            left: 50px;
+                        }
+                        
+                        &__content {
+                            text-align: center;
+                            // width: 80px;
+                            position: absolute;
+                            top: 121px;
+                            left: 82px;
+
+                            img {
+                                width: 50px;
+                            }
+                        }
+
+                        .arrow {
+                            position: relative;
+                            top: 78px;
+                            left: 120px;
+                            width: 90%;
+                            transform:rotate(40deg);
+                            z-index: 1;
+                        }
+                    }
+
+                    .spread-creative {
+                        position: absolute;
+                        top: 13px;
+                        left: -30px;
+                        
+                        .gray-circle {
+                            position: absolute;
+                            width: 110px;
+                            top: 100px;
+                            left: 50px;
+                        }
+                        
+                        &__content {
+                            text-align: center;
+                            // width: 80px;
+                            position: absolute;
+                            top: 121px;
+                            left: 82px;
+
+                            img {
+                                width: 50px;
+                            }
+                        }
+
+                        .arrow {
+                            position: relative;
+                            top: 78px;
+                            left: 120px;
+                            width: 90%;
+                            transform:rotate(40deg);
+                            z-index: 1;
+                        }
+                    }
+                    
+                    .spread-idea {
+                        position: absolute;
+                        top: 13px;
+                        left: -30px;
+                        
+                        .gray-circle {
+                            position: absolute;
+                            width: 110px;
+                            top: 100px;
+                            left: 50px;
+                        }
+                        
+                        &__content {
+                            text-align: center;
+                            // width: 80px;
+                            position: absolute;
+                            top: 121px;
+                            left: 82px;
+
+                            img {
+                                width: 50px;
+                            }
+                        }
+
+                        .arrow {
+                            position: relative;
+                            top: 78px;
+                            left: 120px;
+                            width: 90%;
+                            transform:rotate(40deg);
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+            
+            .spread__text {
+                
+                font-size: 14px;
+                width: 300px;
+                position: relative;
+                left: 180px;
+                margin: auto 0;
+                
+                .secondary {
+                    color: $secondary-color;
+                    text-align: center;
+                }
+                
+                .dotted {
+                    @include dotted-line;
+                    width: 45px;
+                }
+                
+                .dotted__before {
+                    transform:rotate(45deg);
+                    position: relative;
+                    top: 27px;
+                    left: 0px;
+                }
+                
+                .dotted__after {
+                    transform:rotate(-45deg);
+                    position: relative;
+                    top: -24px;
+                    left: 260px;
+                }
+                
+            }
+        }
+    }
+}

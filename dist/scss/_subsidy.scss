@@ -1,0 +1,128 @@
+.subsidy {
+    margin: 50px 0;
+
+    .subsidy__wrap {
+        
+        .subsidy__heading img{
+            width: 600px;
+            position: relative;
+            left: calc(50% - 300px);
+        }
+        
+        .subsidy__content {
+            display: flex;
+            
+            .circles {
+                display: flex;
+                position: relative;
+                left: calc(50% - 450px);
+                
+                .maker-img {
+                    height: 148px;
+                    position: relative;
+                    top: 45px;
+                }
+                
+                .dotted {
+                    @include dotted-line;
+                    position: relative;
+                    top: 120px;
+                }
+                
+                .subsidy-circle {
+                    position: relative;
+
+                    p {
+                        font-size: 11px;
+                    }
+
+                    .arrow {
+                        height: 40px;
+                        position: relative;
+                        top: -105px;
+                        left: -139px;
+                        z-index: 1;
+                    }
+                    
+                    .subsidy-img {
+                        width: 250px;
+                    }
+                    
+                    .project-manager {
+                        position: absolute;
+                        top: 10px;
+                        left: 68px;
+                        
+                        .gray-circle {
+                            position: absolute;
+                            width: 110px;
+                        }
+                        
+                        &__content {
+                            text-align: center;
+                            width: 70px;
+                            position: absolute;
+                            top: 15px;
+                            left: 20px;
+                        }
+                    }
+                    
+                    .subsidy-team {
+                        position: absolute;
+                        top: 25px;
+                        left: 17px;
+                        
+                        .gray-circle {
+                            position: absolute;
+                            width: 110px;
+                            top: 100px;
+                            left: 50px;
+                        }
+                        
+                        &__content {
+                            text-align: center;
+                            width: 70px;
+                            position: absolute;
+                            top: 121px;
+                            left: 71px;
+                        }
+                    }
+                }
+            }
+            
+            .subsidy__text {
+                
+                font-size: 14px;
+                width: 300px;
+                position: relative;
+                left: 180px;
+                margin: auto 0;
+                
+                .secondary {
+                    color: $secondary-color;
+                    text-align: center;
+                }
+                
+                .dotted {
+                    @include dotted-line;
+                    width: 45px;
+                }
+                
+                .dotted__before {
+                    transform:rotate(45deg);
+                    position: relative;
+                    top: 27px;
+                    left: 40px;
+                }
+                
+                .dotted__after {
+                    transform:rotate(-45deg);
+                    position: relative;
+                    top: -24px;
+                    left: 215px;
+                }
+                
+            }
+        }
+    }
+}

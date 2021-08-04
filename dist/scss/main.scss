@@ -1,0 +1,28 @@
+@import 'config';
+@import 'menu';
+@import 'home';
+@import 'feature';
+@import 'what';
+@import 'benefit';
+@import 'subsidy';
+@import 'funding';
+@import 'spread';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+body {
+    color: $primary-color;
+}
+
+.boundary {
+    width: 100%;
+}

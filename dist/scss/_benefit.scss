@@ -1,0 +1,109 @@
+.benefit {
+    background: $background-color;
+
+    .benefit-main {
+        padding: 120px;
+        font-size: 140%;
+
+        &__wrap {
+            width: 80%;
+            margin: 0 auto 0 22%;
+            position: relative;
+            
+            &__lead {
+                color: $secondary-color;
+                font-size: 0.6rem;
+                text-align: left;
+            }
+
+            &__title {
+                font-weight: 100;
+                margin-bottom: 15px;
+            }
+
+            &__description {
+                .secondary {
+                    color: $secondary-color;
+                }
+            }
+
+            &__description__lead {
+                font-size: 0.7rem;
+                display: inline-block;
+                margin-bottom: 11px;
+                position: relative;
+        
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    width: 110px;
+                    height: 90px;
+                    background-image: url(/dist/img/people.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    top: -35px;
+                    right: -135px;
+                }
+            }
+        }
+
+    }
+}
+
+
+.benefit-bottom__wrap {
+    width: 90%;
+    margin: 0 auto 0 22%;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+
+    .circles {
+        display: flex;
+        position: relative;
+
+        .dotted {
+            @include dotted-line;
+
+            text-align: center;
+            font-size: 15px;
+            color: $secondary-color;
+
+            position: relative;
+            top: 70px;
+        }
+
+        .maker-circle p {
+            position: relative;
+            top: -101px;
+            left: 32px;
+        }
+
+        .specialsit-circle {
+            text-align: center;
+            margin-left: -23px;
+            
+            p {
+                font-size: 11px;
+                position: relative;
+                top: -122px;
+                left: 2px;
+            }
+
+            .font-normal {
+                font-size: 18px;
+            }
+
+            img {
+                width: 78%;
+            }
+        }
+    }
+
+    .benefit-bottom__wrap__right {
+        margin-top: 53px;
+        font-size: 13px;
+    }
+
+}

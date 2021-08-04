@@ -1,0 +1,63 @@
+.what .what-main {
+    text-align: center;
+    margin: 120px;
+    font-size: 130%;
+
+    &__wrap {
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            content: url('/dist/img/bubble2.png');
+            position: absolute;
+            left: -30%;
+        }
+    }
+
+    &__lead {
+        color: #F28E3D;
+        font-size: 0.6rem;
+        text-align: left;
+    }
+
+    &__title {
+        font-weight: 100;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-size: 0.7rem;
+
+        .fish {
+            background: #C8E7E9;
+            padding: 6px 7px;
+            margin: 0 2px;
+            border-radius: 35%;
+        }
+    }
+}
+
+.what .what__bottom {
+    margin-top: 30px;
+    position: relative;
+
+    .what__img {
+        width: 100%;
+    }
+
+    .what__profile {
+        background: $primary-color;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px;
+        position: absolute;
+        left: calc(50% - 128px);
+        top: 8%;
+    }
+}

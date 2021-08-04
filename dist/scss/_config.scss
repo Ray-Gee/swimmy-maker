@@ -1,0 +1,16 @@
+$primary-color: #474359;
+$secondary-color: #F28E3D;
+$background-color: #FCFAF7;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin dotted-line {
+    width: 150px;
+    height: 10px;
+    background-size: 8px 1px;
+    background-image: linear-gradient(
+        to right, $secondary-color, $secondary-color 5px, transparent 5px, transparent 8px);
+    background-repeat: repeat-x;
+}

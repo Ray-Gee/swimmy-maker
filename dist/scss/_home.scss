@@ -1,0 +1,81 @@
+.home {
+    background: url(/dist/img/top.jpg) no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.home-title {
+    padding: 8vh 0 0 22vw;
+    color: $primary-color;
+
+    &__sub {
+        margin-left: 17px;
+        position: relative;
+
+        &:after {
+            content: "PORTEARTHスイミー";
+            font-size: 25%;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: 540;
+    }
+    p {
+        font-size: 17px;
+    }
+
+    .maker-btn {
+        width: 10rem;
+        line-height: 2rem;
+        text-align: center;
+        background: #F28E3D;
+        border-radius: 6px;
+        color: #fff;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+}
+
+
+// サイドメニュー
+.aside {
+    width: 100px;
+
+    .menu {
+        margin: 10px 12px;
+        position: absolute;
+    }
+    .operator {
+        top: 2rem;
+    }
+    .twitter {
+        color: $primary-color;
+        top: 5rem;
+    }
+}
+
+
+// ワーカー向けボタン
+.right-btn {
+    margin-top: 300px;
+    text-align: end;
+
+    .btn {
+        font-size: 14px;
+        background: #fff;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        color: $primary-color;
+        padding: 13px;
+        box-shadow: 0 10px 15px 5px rgba(0, 0, 0, .2);
+    }
+
+    .btn:before {
+        content : url("/dist/img/swimmy.png");
+    }
+}
