@@ -1,5 +1,5 @@
 .home {
-    background: url(/dist/img/top.jpg) no-repeat;
+    background: url(/img/top.jpg) no-repeat;
     background-size: cover;
     height: 800px;
 }
@@ -76,6 +76,6 @@
     }
 
     .btn:before {
-        content : url("/dist/img/swimmy.png");
+        content : url("/img/swimmy.png");
     }
 }
