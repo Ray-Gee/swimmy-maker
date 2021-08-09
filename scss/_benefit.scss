@@ -64,7 +64,7 @@
         position: relative;
 
         .dotted {
-            @include dotted-line;
+            @include dotted-line();
 
             text-align: center;
             font-size: 15px;

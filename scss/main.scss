@@ -7,11 +7,22 @@
 @import 'subsidy';
 @import 'funding';
 @import 'spread';
+@import 'challenge';
+@import 'compare';
+@import 'congeniality';
+@import 'howto';
+@import 'table';
+@import 'team-japan';
+@import 'works';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 a, a:visited {
@@ -25,4 +36,8 @@ body {
 
 .boundary {
     width: 100%;
+}
+
+.container {
+    padding: 0 20%;
 }

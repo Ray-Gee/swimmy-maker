@@ -148,7 +148,7 @@
                 }
                 
                 .dotted {
-                    @include dotted-line;
+                    @include dotted-line();
                     width: 45px;
                 }
                 

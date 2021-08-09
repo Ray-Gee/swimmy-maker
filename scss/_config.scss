@@ -6,11 +6,41 @@ $background-color: #FCFAF7;
     transition: all 0.5s ease-in-out;
 }
 
-@mixin dotted-line {
-    width: 150px;
-    height: 10px;
-    background-size: 8px 1px;
+@mixin dotted-line($color: $secondary-color) {
+    width: 15rem;
+    height: 0.2rem;
+    background-size: 8px 2px;
     background-image: linear-gradient(
-        to right, $secondary-color, $secondary-color 5px, transparent 5px, transparent 8px);
+        to right, $color, $color 5px, transparent 5px, transparent 8px);
     background-repeat: repeat-x;
+}
+
+@mixin challenge__box($number) {
+    text-align: center;
+    position: relative;
+        h4 {
+        font-weight: 100;
+    }
+
+    &::before {
+        content: '課題';
+        letter-spacing: 4px;
+        color: #fff;
+        background-color: $secondary-color;
+        display: inline-block;
+        width: 6rem;
+        height: 6rem;
+        position: relative;
+        top: -3rem;
+        left: -1rem;
+    }
+
+    &::after {
+        content: $number;
+        position: relative;
+        top: 0;
+        left: -18rem;
+        color: #fff;
+        font-size: 4rem;
+    }
 }

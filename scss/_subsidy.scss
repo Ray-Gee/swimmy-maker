@@ -2,6 +2,8 @@
     margin: 50px 0;
 
     .subsidy__wrap {
+        // position: relative;
+        // width: 100%;
         
         .subsidy__heading img{
             width: 600px;
@@ -24,7 +26,7 @@
                 }
                 
                 .dotted {
-                    @include dotted-line;
+                    @include dotted-line();
                     position: relative;
                     top: 120px;
                 }
@@ -36,13 +38,13 @@
                         font-size: 11px;
                     }
 
-                    .arrow {
-                        height: 40px;
-                        position: relative;
-                        top: -105px;
-                        left: -139px;
-                        z-index: 1;
-                    }
+                    // .arrow::before {
+                    //     height: 40px;
+                    //     position: relative;
+                    //     top: 0px;
+                    //     left: -139px;
+                    //     z-index: 1;
+                    // }
                     
                     .subsidy-img {
                         width: 250px;
@@ -86,40 +88,62 @@
                             top: 121px;
                             left: 71px;
                         }
+
+                        &::before {
+                            content: '';
+                            background-image: url(/img/arrow@2x.png);
+                            background-size: contain;
+                            // position: relative;
+                            // top: 60px;
+                            // left: 95px;
+                            z-index: 1;
+                            // display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                        }
                     }
                 }
             }
             
             .subsidy__text {
-                
+                position: relative;
                 font-size: 14px;
                 width: 300px;
-                position: relative;
-                left: 180px;
-                margin: auto 0;
+                margin: auto 20%;
                 
-                .secondary {
-                    color: $secondary-color;
-                    text-align: center;
-                }
-                
-                .dotted {
-                    @include dotted-line;
-                    width: 45px;
-                }
-                
-                .dotted__before {
-                    transform:rotate(45deg);
-                    position: relative;
-                    top: 27px;
-                    left: 40px;
-                }
-                
-                .dotted__after {
-                    transform:rotate(-45deg);
-                    position: relative;
-                    top: -24px;
-                    left: 215px;
+                .subsidy__title {
+
+                    .secondary {
+                        color: $secondary-color;
+                        text-align: center;
+                    }
+                    
+                    .dotted__before {
+
+                        &::before {
+                            border-bottom: 2px dotted $secondary-color;
+                            content: "";
+                            position: absolute;
+                            top: 20px;
+                            left: -15px;
+                            transform: rotate(45deg);
+                            width: 45px;
+                        }
+                    }
+
+                    .dotted__after {
+
+                        &::after {
+                            border-bottom: 2px dotted $secondary-color;
+                            content: "";
+                            position: absolute;
+                            top: 20px;
+                            right: 0;
+                            transform: rotate(-45deg);
+                            width: 45px;
+                        }
+                    }
+
                 }
                 
             }

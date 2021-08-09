@@ -1,0 +1,101 @@
+.challenge {
+    background: #eee;
+    margin-top: -7px;
+
+    .challenge__wrap {
+        padding: 5rem;
+        
+        .challenge__heading {
+            text-align: center;
+            margin-bottom: 5rem;
+            
+            .challenge__lead {
+                font-size: 15px;
+                color: $secondary-color;
+            }
+            .challenge__title {
+                font-weight: 100;
+                font-size: 45px;
+            }
+            .challenge__subtitle {
+                font-weight: 100;
+                font-size: 2rem;
+            }
+
+            &__area {
+                display: inline-block;
+                text-align: left;
+            }
+        }
+        
+        .challenge__content {
+            display: flex;
+            justify-content: center;
+            // position: relative;
+
+            p {
+                font-size: 1.5rem;
+
+                span {
+                    color: $secondary-color;
+                }
+            }
+
+            .dotted {
+                @include dotted-line();
+                width: 27rem;
+                background-image: linear-gradient(
+                    to right, $primary-color, $primary-color 5px, transparent 5px, transparent 8px);
+                position: relative;
+                top: 0.2rem;
+                left: 7.5rem;
+            }
+
+            &__group1 {
+                margin-right: 9rem;
+
+                // .challenge__content__theme {
+                //     position: relative;
+                //     top: -2.7rem;
+                // }
+
+                .main-img {
+                    width: 35rem;
+                }
+
+                .challenge__content__text {
+                    @include challenge__box('01');
+                }
+            }
+
+            &__group2 {
+                
+                .main-img {
+                    height: 16.6rem;
+                    position: relative;
+                    left: calc(50% - 58px);
+                }
+                
+                .challenge__content__text {
+                    left: 5.3rem;
+
+                    @include challenge__box('02');
+                    &::after{
+                        left: -29rem;
+                    }
+                }
+
+                .challenge__content__text {
+                    left: -1rem;
+                }
+            }
+
+            &__text {
+                font-size: 1.5rem;
+                position: relative;
+                top: 3rem;
+                left: -6rem;
+            }
+        }
+    }
+}

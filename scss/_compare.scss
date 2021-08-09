@@ -1,0 +1,86 @@
+.compare {
+
+    &__wrap {
+
+        padding: 20%;
+        
+        .compare__heading {
+            // text-align: center;
+            margin-bottom: 50px;
+            
+            .compare__lead {
+                font-size: 15px;
+                color: $secondary-color;
+            }
+            .compare__title {
+                font-weight: 100;
+                font-size: 45px;
+            }
+            .compare__subtitle {
+                font-weight: 100;
+                font-size: 2rem;
+            }
+            
+            &__area {
+                display: inline-block;
+                text-align: left;
+            }
+            
+        }
+        
+        .compare__content {
+            display: flex;
+            justify-content: center;
+            
+            p {
+                font-size: 1.5rem;
+                // width: 40%;
+            }
+            
+            &__draw {
+                display: flex;
+                align-items: center;
+                margin-top: -10rem;
+                margin-left: 4rem;
+                position: relative;
+
+                .dotted {
+                    @include dotted-line($primary-color);
+                    position: absolute;
+                    top: 16rem;
+                    left: 18rem;
+
+                    &:nth-child(2) {
+                        transform: rotate(-35deg);
+                        transform-origin: 0px 0px;
+                        width: 13rem;
+                    }
+                    &:nth-child(3) {
+                        width: 11rem;
+                    }
+                    &:nth-child(4) {
+                        transform: rotate(35deg);
+                        transform-origin: 0px 0px;
+                        width: 13rem;
+                    }
+                }
+                
+                &__left {
+                    img {
+                        height: 18rem;
+                    }
+                }
+                
+                &__right {
+                    margin-left: 10rem;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        height: 11rem;
+                    }
+                }
+            }
+        }
+   
+    }
+}

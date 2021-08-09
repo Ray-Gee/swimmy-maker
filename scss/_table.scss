@@ -1,0 +1,49 @@
+.table {
+    margin-top: 9rem;
+    width: 100%;
+    font-size: 1.8rem;
+    text-align:  center;
+
+    table {
+        border-collapse:  collapse;
+    }
+
+    tr:not(:first-child):hover {
+        background-color: #FBF5EE;
+        // cursor: pointer;
+
+        td:first-child {
+            background: $secondary-color;
+            color: #fff;
+        }
+    }
+
+    .portearth {
+        background-color: #C8E7E9;
+    }
+    .individual {
+        background-color: #ECEEBA;
+    }
+    .company {
+        background-color: #E9CEC8;
+    }
+
+    th {
+        padding: 1.6rem;
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        width: 24.8rem;
+    }
+
+    td {
+        padding: 1.3rem;
+        border: solid 1px #D1D1D1;
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        text-align:  left;
+    }
+     
+}

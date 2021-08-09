@@ -1,0 +1,64 @@
+.team-japan {
+    position: relative;
+    
+    .men_women {
+        width: 22.3%;
+        position: absolute;
+        top: -7rem;
+        left: 20rem;
+    }
+
+    .line {
+        position: relative;
+        top: -23rem;
+        left: 54rem;
+    }
+    .line2 {
+        position: relative;
+        top: -14rem;
+        left: 48rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: #fff;
+        position: relative;
+        top: -33rem;
+        left: 63rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+        color: #fff;
+        font-weight: 100;
+        position: relative;
+        top: -30.5rem;
+        left: 63rem;
+    }
+}
+
+.team-japan__content {
+    display: flex;
+    justify-content: center;
+
+    // img {
+    //     // width: 30rem;
+
+        
+    //     &:first-child {
+    //         margin-right: 10rem;
+    //     }
+    // }
+    .baloon {
+        margin-right: 10rem;
+
+        img {
+            height: 30rem;
+        }
+    }
+
+    .chat {
+        img {
+            height: 40rem;
+        }
+    }
+}
