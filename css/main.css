@@ -1279,6 +1279,132 @@
   height: 40rem;
 }
 
+.works__lead {
+  color: #F28E3D;
+}
+.works__title {
+  font-size: 4rem;
+  font-weight: 100;
+}
+.works__heading__area {
+  display: flex;
+  align-items: flex-end;
+}
+.works__heading__area div {
+  margin-left: 3rem;
+}
+.works .works__company__area {
+  position: relative;
+}
+.works .works__company__area .boundary {
+  margin-top: 5rem;
+}
+.works .works__company__area h1 {
+  background-color: #474359;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 100;
+  display: inline-block;
+  padding: 0.7rem;
+  position: absolute;
+  top: 20rem;
+  left: 20rem;
+}
+.works .works__company__content {
+  margin-top: 7rem;
+}
+.works .works__company__content .logo {
+  width: 17rem;
+}
+.works .works__company__content .profile {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+}
+.works .works__company__content .profile__title h3 {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+  border-left: 1.5px solid #000;
+}
+.works .works__company__content .profile__title p {
+  font-size: 1.6rem;
+  line-height: 3.3rem;
+}
+.works .works__company__content .profile__title p span {
+  font-weight: bold;
+}
+.works .works__company__content .profile__img {
+  margin-left: 3rem;
+}
+.works .works__company__content .profile__img .detail {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #C7A778;
+  position: relative;
+  left: 7.5rem;
+}
+.works .works__company__content .profile__img .detail::before {
+  content: url("/img/line_gold.png");
+  position: absolute;
+  top: 1.5rem;
+  left: 3rem;
+}
+.works .works__company__content .profile__img .detail::after {
+  content: url("/img/line_gold2.png");
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+}
+.works .works__company__content .profile__img img {
+  width: 170%;
+}
+.works .works__company__content .profile__story {
+  width: 90rem;
+}
+.works .works__company__content .profile__story__list {
+  margin-top: 8rem;
+}
+.works .works__company__content .profile__story__list h3 {
+  font-size: 1.7rem;
+}
+.works .works__company__content .profile__story__list h3::before {
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-image: url(/img/q1@2x.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+.works .works__company__content .profile__story__list p {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+.works .works__company__content .profile__story__list p span {
+  font-weight: bold;
+}
+.works .works__company__content .profile__story__list__group1 {
+  margin-bottom: 3rem;
+}
+.works .works__company__content .profile__story__list__group1::before {
+  content: "Q1";
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  top: 4.8rem;
+  left: 0.5rem;
+}
+.works .works__company__content .profile__story__list__group2::before {
+  content: "Q2";
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  top: 4.8rem;
+  left: 0.4rem;
+}
+
 * {
   padding: 0;
   margin: 0;

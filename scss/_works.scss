@@ -1,3 +1,163 @@
 .works {
+
+    &__lead {
+        color: $secondary-color;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
+    &__heading__area {
+        display: flex;
+        align-items: flex-end;
+
+        div {
+            margin-left: 3rem;
+        }
+    }
+
+    .works__company {
+
+        &__area {
+            position: relative;
+    
+            .boundary {
+                margin-top: 5rem;
+            }
+            
+            h1 {
+                background-color: $primary-color;
+                color: #fff;
+                font-size: 2.5rem;
+                font-weight: 100;
+                display: inline-block;
+                padding: 0.7rem;
+                position: absolute;
+                top: 20rem;
+                left: 20rem;
+            }
+        }
+    
+        &__content {
+            margin-top: 7rem;
+    
+            .logo {
+                width: 17rem;
+            }
+    
+            .profile {
+                margin-top: 6rem;
+                display: flex;
+                justify-content: space-around;
+    
+                &__title {
+    
+                    h3 {
+                        font-size: 1.5rem;
+                        padding-left: 2rem;
+                        margin-bottom: 3rem;
+                        border-left: 1.5px solid #000;
+                    }
+    
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 3.3rem;
+
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+    
+    
+                &__img {
+                    margin-left: 3rem;
+    
+                    .detail {
+                        font-size: 1.5rem;
+                        text-align: center;
+                        color: #C7A778;
+                        position: relative;
+                        left: 7.5rem;
+    
+                        &::before {
+                            content: url('/img/line_gold.png');
+                            position: absolute;
+                            top: 1.5rem;
+                            left: 3rem;
+                        }
+                        &::after {
+                            content: url('/img/line_gold2.png');
+                            position: absolute;
+                            top: 1.5rem;
+                            right: 3rem;
+                        }
+                    }
+                    img {
+                        width: 170%;
+                    }
+                }
+                
+                &__story {
+                    width: 90rem;
+                    
+                    &__list {
+                        margin-top: 8rem;
+    
+                        h3 {
+                            font-size: 1.7rem;
+                            
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                width: 5rem;
+                                height: 5rem;
+                                background-image: url(/img/q1@2x.png);
+                                background-size: contain;
+                                vertical-align: middle;
+                                margin-right: 2rem;
+                            }
+                        }
+    
+                        p {
+                            font-size: 1.3rem;
+                            line-height: 3rem;
+    
+                            span {
+                                font-weight: bold;
+                            } 
+                        }
+                        
+                        &__group1 {
+                            margin-bottom: 3rem;
+    
+                            &::before {
+                                content: 'Q1';
+                                font-size: 3rem;
+                                color: #fff;
+                                position: relative;
+                                top: 4.8rem;
+                                left: 0.5rem;
+                            }
+                        }
+                        &__group2 {
+    
+                            &::before {
+                                content: 'Q2';
+                                font-size: 3rem;
+                                color: #fff;
+                                position: relative;
+                                top: 4.8rem;
+                                left: 0.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     
 }
