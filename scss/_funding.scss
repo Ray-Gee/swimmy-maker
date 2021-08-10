@@ -12,6 +12,7 @@
         }
         
         .funding__content {
+            position: relative;
             display: flex;
             
             .circles {
@@ -135,12 +136,12 @@
             }
             
             .funding__text {
-                
-                font-size: 14px;
-                width: 300px;
-                position: relative;
-                left: 180px;
+                font-size: 1.4rem;
+                width: 30rem;
                 margin: auto 0;
+                position: absolute;
+                top: 5rem;
+                right: 13%;
                 
                 .secondary {
                     color: $secondary-color;
@@ -155,14 +156,14 @@
                 .dotted__before {
                     transform:rotate(45deg);
                     position: relative;
-                    top: 27px;
+                    top: 2.3rem;
                     left: 0px;
                 }
                 
                 .dotted__after {
                     transform:rotate(-45deg);
                     position: relative;
-                    top: -24px;
+                    top: -2rem;
                     left: 260px;
                 }
                 

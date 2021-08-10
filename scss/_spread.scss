@@ -11,6 +11,7 @@
         
         .spread__content {
             display: flex;
+            position: relative;
             
             .circles {
                 display: flex;
@@ -110,7 +111,6 @@
                         
                         &__content {
                             text-align: center;
-                            // width: 80px;
                             position: absolute;
                             top: 121px;
                             left: 82px;
@@ -144,7 +144,6 @@
                         
                         &__content {
                             text-align: center;
-                            // width: 80px;
                             position: absolute;
                             top: 121px;
                             left: 82px;
@@ -178,7 +177,6 @@
                         
                         &__content {
                             text-align: center;
-                            // width: 80px;
                             position: absolute;
                             top: 121px;
                             left: 82px;
@@ -201,12 +199,12 @@
             }
             
             .spread__text {
-                
-                font-size: 14px;
-                width: 300px;
-                position: relative;
-                left: 180px;
+                font-size: 1.4rem;
+                width: 30rem;
                 margin: auto 0;
+                position: absolute;
+                right: 13%;
+                top: 5rem;
                 
                 .secondary {
                     color: $secondary-color;
@@ -221,15 +219,15 @@
                 .dotted__before {
                     transform:rotate(45deg);
                     position: relative;
-                    top: 27px;
-                    left: 0px;
+                    top: 2.3rem;
+                    left: 0rem;
                 }
                 
                 .dotted__after {
                     transform:rotate(-45deg);
                     position: relative;
-                    top: -24px;
-                    left: 260px;
+                    top: -2rem;
+                    left: 26rem;
                 }
                 
             }

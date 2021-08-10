@@ -45,7 +45,7 @@
 }
 
 .home {
-  background: url(..img/top.jpg) no-repeat;
+  background: url(../img/top.jpg) no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -112,7 +112,7 @@
   box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
 }
 .right-btn .btn:before {
-  content: url("..img/swimmy.png");
+  content: url("../img/swimmy.png");
 }
 
 .feature__list {
@@ -136,7 +136,7 @@
   position: relative;
 }
 .what .what-main__wrap::before {
-  content: url("..img/bubble2.png");
+  content: url("../img/bubble2.png");
   position: absolute;
   left: -30%;
 }
@@ -216,7 +216,7 @@
   display: inline-block;
   width: 110px;
   height: 90px;
-  background-image: url(..img/people.png);
+  background-image: url(../img/people.png);
   background-size: contain;
   background-repeat: no-repeat;
   top: -35px;
@@ -282,6 +282,7 @@
 }
 .subsidy .subsidy__wrap .subsidy__content {
   display: flex;
+  position: relative;
 }
 .subsidy .subsidy__wrap .subsidy__content .circles {
   display: flex;
@@ -354,10 +355,12 @@
   height: 50px;
 }
 .subsidy .subsidy__wrap .subsidy__content .subsidy__text {
-  position: relative;
-  font-size: 14px;
-  width: 300px;
-  margin: auto 20%;
+  font-size: 1.4rem;
+  width: 30rem;
+  margin: auto 0;
+  position: absolute;
+  right: 13%;
+  top: 5rem;
 }
 .subsidy .subsidy__wrap .subsidy__content .subsidy__text .subsidy__title .secondary {
   color: #F28E3D;
@@ -395,6 +398,7 @@
   left: calc(50% - 300px);
 }
 .funding .funding__wrap .funding__content {
+  position: relative;
   display: flex;
 }
 .funding .funding__wrap .funding__content .circles {
@@ -503,11 +507,12 @@
   z-index: 1;
 }
 .funding .funding__wrap .funding__content .funding__text {
-  font-size: 14px;
-  width: 300px;
-  position: relative;
-  left: 180px;
+  font-size: 1.4rem;
+  width: 30rem;
   margin: auto 0;
+  position: absolute;
+  top: 5rem;
+  right: 13%;
 }
 .funding .funding__wrap .funding__content .funding__text .secondary {
   color: #F28E3D;
@@ -524,13 +529,13 @@
 .funding .funding__wrap .funding__content .funding__text .dotted__before {
   transform: rotate(45deg);
   position: relative;
-  top: 27px;
+  top: 2.3rem;
   left: 0px;
 }
 .funding .funding__wrap .funding__content .funding__text .dotted__after {
   transform: rotate(-45deg);
   position: relative;
-  top: -24px;
+  top: -2rem;
   left: 260px;
 }
 
@@ -544,6 +549,7 @@
 }
 .spread .spread__wrap .spread__content {
   display: flex;
+  position: relative;
 }
 .spread .spread__wrap .spread__content .circles {
   display: flex;
@@ -707,11 +713,12 @@
   z-index: 1;
 }
 .spread .spread__wrap .spread__content .spread__text {
-  font-size: 14px;
-  width: 300px;
-  position: relative;
-  left: 180px;
+  font-size: 1.4rem;
+  width: 30rem;
   margin: auto 0;
+  position: absolute;
+  right: 13%;
+  top: 5rem;
 }
 .spread .spread__wrap .spread__content .spread__text .secondary {
   color: #F28E3D;
@@ -728,14 +735,14 @@
 .spread .spread__wrap .spread__content .spread__text .dotted__before {
   transform: rotate(45deg);
   position: relative;
-  top: 27px;
-  left: 0px;
+  top: 2.3rem;
+  left: 0rem;
 }
 .spread .spread__wrap .spread__content .spread__text .dotted__after {
   transform: rotate(-45deg);
   position: relative;
-  top: -24px;
-  left: 260px;
+  top: -2rem;
+  left: 26rem;
 }
 
 .challenge {
