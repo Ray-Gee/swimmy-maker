@@ -83,13 +83,13 @@
                         left: 7.5rem;
     
                         &::before {
-                            content: url('/img/line_gold.png');
+                            content: url('img/line_gold.png');
                             position: absolute;
                             top: 1.5rem;
                             left: 3rem;
                         }
                         &::after {
-                            content: url('/img/line_gold2.png');
+                            content: url('img/line_gold2.png');
                             position: absolute;
                             top: 1.5rem;
                             right: 3rem;
@@ -114,7 +114,7 @@
                                 display: inline-block;
                                 width: 5rem;
                                 height: 5rem;
-                                background-image: url(/img/q1@2x.png);
+                                background-image: url(img/q1@2x.png);
                                 background-size: contain;
                                 vertical-align: middle;
                                 margin-right: 2rem;
