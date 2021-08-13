@@ -1,0 +1,77 @@
+.footer {
+    background-color: #81CDDC;
+    margin-top: -7px;
+    height: 30rem;
+    position: relative;
+
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 30rem;
+        padding-top: 3rem;
+
+        img {
+            margin-top: 2rem;
+            width: 30rem;
+            margin-left: 4rem;
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+        position: absolute;
+        bottom: 2rem;
+        left: calc(50% - 140px);
+    }
+
+    a {
+        @include button(#81CDDC);
+        width: 37rem;
+        color: #fff;
+        border: solid 1px #fff;
+
+        &:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .bottom {
+        position: relative;
+        top: -5rem;
+        left: 10rem;
+
+        .starfish {
+            width: 10rem;
+            position: relative;
+            top: -5rem;
+            left: 2rem;
+        }
+
+        .shell {
+            width: 10rem;
+        }
+
+    }
+
+    &-upper {
+        position: relative;
+        left: 10rem;
+        top: -51rem;
+
+        .swimmy {
+            width: 20rem;
+        }
+
+        .swimmy2 {
+            width: 18rem;
+        }
+
+        .swimmy3 {
+            width: 18rem;
+        }
+    }
+}

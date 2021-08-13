@@ -1411,6 +1411,234 @@
   top: 4.8rem;
   left: 0.4rem;
 }
+.works .others {
+  margin-top: 6rem;
+  text-align: center;
+}
+.works .others__title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.works .others__title::before {
+  content: "";
+  position: absolute;
+  right: 62%;
+  height: 2.5rem;
+  width: 0;
+  border: solid 1px #474359;
+  transform: rotate(-45deg);
+}
+.works .others__title::after {
+  content: "";
+  position: absolute;
+  left: 62%;
+  height: 2.5rem;
+  border: solid 1px #474359;
+  transform: rotate(45deg);
+}
+.works .others__img {
+  margin-bottom: 2rem;
+}
+.works .others__img img {
+  width: 7rem;
+}
+
+.collaboration {
+  margin-top: -7px;
+}
+.collaboration .collaboration__area {
+  background-color: #C8E7E9;
+  height: 60rem;
+}
+.collaboration .container__area {
+  text-align: center;
+}
+.collaboration__title {
+  text-align: left;
+  display: inline-block;
+}
+.collaboration__lead {
+  color: #F28E3D;
+}
+.collaboration__img {
+  margin-top: 5rem;
+  text-align: center;
+}
+.collaboration__img img {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+}
+.collaboration .logo {
+  margin-top: 18rem;
+  text-align: center;
+}
+.collaboration .logo img {
+  width: 40rem;
+}
+.collaboration__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 4rem 7rem;
+  font-size: 1.4rem;
+  align-items: center;
+}
+.collaboration__grid span {
+  font-weight: bold;
+}
+.collaboration__grid .top-left {
+  font-size: 2.4rem;
+}
+.collaboration__grid .middle-left img {
+  width: 100%;
+}
+.collaboration .boundary {
+  width: 80%;
+}
+.collaboration .boundary-fishes::after {
+  content: url(../img/fishes@2x.png);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  right: 12rem;
+}
+.collaboration h2 {
+  text-align: center;
+}
+
+.qa {
+  margin-bottom: 30rem;
+}
+.qa__lead {
+  color: #F28E3D;
+  font-size: 1.4rem;
+}
+.qa .question:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.qa .question .question__area {
+  background-color: #eceeba;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+.qa .question .question__area .question__text {
+  padding: 1rem 2rem;
+}
+.qa .question .question__area .plus {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #474359;
+  margin-right: 2rem;
+  position: relative;
+  top: 2.2rem;
+}
+.qa .question .question__area .plus::after {
+  content: "";
+  width: 26px;
+  height: 2px;
+  background-color: #474359;
+  transform: rotate(90deg);
+  display: block;
+}
+.qa .answer {
+  font-size: 1.4rem;
+  padding: 2rem;
+  line-height: 1.5;
+  display: none;
+}
+
+.footer {
+  background-color: #81CDDC;
+  margin-top: -7px;
+  height: 30rem;
+  position: relative;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 30rem;
+  padding-top: 3rem;
+}
+.footer__content img {
+  margin-top: 2rem;
+  width: 30rem;
+  margin-left: 4rem;
+}
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 2rem;
+  left: calc(50% - 140px);
+}
+.footer a {
+  position: relative;
+  display: inline-block;
+  padding: 1.6rem 8rem;
+  background-color: #81CDDC;
+  border-radius: 5rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.5rem;
+  transition: opacity 300ms ease-in-out;
+  overflow: hidden;
+  width: 37rem;
+  color: #fff;
+  border: solid 1px #fff;
+}
+.footer a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+.footer a:hover::before {
+  opacity: 1;
+}
+.footer a:first-child {
+  margin-bottom: 1rem;
+}
+.footer .bottom {
+  position: relative;
+  top: -5rem;
+  left: 10rem;
+}
+.footer .bottom .starfish {
+  width: 10rem;
+  position: relative;
+  top: -5rem;
+  left: 2rem;
+}
+.footer .bottom .shell {
+  width: 10rem;
+}
+.footer-upper {
+  position: relative;
+  left: 10rem;
+  top: -51rem;
+}
+.footer-upper .swimmy {
+  width: 20rem;
+}
+.footer-upper .swimmy2 {
+  width: 18rem;
+}
+.footer-upper .swimmy3 {
+  width: 18rem;
+}
 
 * {
   padding: 0;
@@ -1425,11 +1653,30 @@ html {
 
 a, a:visited {
   text-decoration: none;
-  color: #474359;
+  color: #fff;
 }
 
 body {
   color: #474359;
+  font-size: 1.6rem;
+  letter-spacing: 0.12em;
+  font-family: "游ゴシック", "ヒラギノ角ゴProN", "メイリオ", "MS Pゴシック", sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
 }
 
 .boundary {
@@ -1437,5 +1684,5 @@ body {
 }
 
 .container {
-  padding: 0 20%;
+  padding: 3% 20%;
 }/*# sourceMappingURL=main.css.map */

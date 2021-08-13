@@ -1,0 +1,51 @@
+.qa {
+    margin-bottom: 30rem;
+
+    &__lead {
+        color: $secondary-color;
+        font-size: 1.4rem;
+    }
+
+    .question {
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+        
+        .question__area {
+            background-color: #eceeba;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 0.5rem;
+
+            .question__text {
+                padding: 1rem 2rem;
+            }
+            .plus {
+                display: block;
+                width: 26px;
+                height: 2px;
+                background-color: $primary-color;
+                margin-right: 2rem;
+                position: relative;
+                top: 2.2rem;
+    
+                &::after {
+                    content: '';
+                    width: 26px;
+                    height: 2px;
+                    background-color: $primary-color;
+                    transform: rotate(90deg);
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .answer {
+        font-size: 1.4rem;
+        padding: 2rem;
+        line-height: 1.5;
+        display: none;
+    }
+}

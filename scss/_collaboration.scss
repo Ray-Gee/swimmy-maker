@@ -1,0 +1,83 @@
+.collaboration {
+    margin-top: -7px;
+    
+    .collaboration__area {
+        background-color: #C8E7E9;
+        height: 60rem;
+    }
+
+    .container__area {
+        text-align: center;
+    }
+
+    &__title {
+        text-align: left;
+        display: inline-block;
+    }
+
+    &__lead {
+        color: $secondary-color;
+    }
+
+    &__img {
+        margin-top: 5rem;
+        text-align: center;
+
+        img {
+            width: 50%;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .logo {
+        margin-top: 18rem;
+        text-align: center;
+
+        img {
+            width: 40rem;
+        }
+    };
+    
+
+    &__grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        gap: 4rem 7rem;
+        font-size: 1.4rem;
+        align-items: center;
+
+        span {
+            font-weight: bold;
+        }
+
+        .top-left {
+            font-size: 2.4rem;
+        }
+
+        .middle-left {
+
+            img {
+                width: 100%;
+            };
+        }
+    }
+
+    .boundary {
+        width: 80%;
+
+        &-fishes::after {
+            content: url(../img/fishes@2x.png);
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            right: 12rem;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

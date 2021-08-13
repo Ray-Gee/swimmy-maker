@@ -159,5 +159,43 @@
         }
     }
 
+
     
+
+    .others {
+        margin-top: 6rem;
+        text-align: center;
+
+        &__title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 62%;
+                height: 2.5rem;
+                width: 0;
+                border: solid 1px $primary-color;
+                transform: rotate(-45deg);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 62%;
+                height: 2.5rem;
+                border: solid 1px $primary-color;
+                transform: rotate(45deg);
+            }
+        }
+
+        &__img {
+
+            margin-bottom: 2rem;
+            img {
+                width: 7rem;
+            }
+        }
+    };
 }
