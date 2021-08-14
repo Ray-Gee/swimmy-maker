@@ -4,9 +4,9 @@
         color: $secondary-color;
     }
 
-    &__title {
+    &__heading {
         font-size: 4rem;
-        font-weight: 100;
+        // font-weight: 100;
     }
 
     &__heading__area {
@@ -43,8 +43,16 @@
         &__content {
             margin-top: 7rem;
     
-            .logo {
-                width: 17rem;
+            .works__title {
+                display: flex;
+
+                .logo {
+                    width: 17rem;
+                }
+                .social {
+                    width: 4rem;
+                    margin-left: 0.5rem;
+                }
             }
     
             .profile {
@@ -98,12 +106,16 @@
                     img {
                         width: 170%;
                     }
+
+                    .profile__text {
+                        font-size: 1rem;
+                    }
                 }
                 
                 &__story {
                     width: 90rem;
                     
-                    &__list {
+                    .profile__list {
                         margin-top: 8rem;
     
                         h3 {
@@ -114,7 +126,7 @@
                                 display: inline-block;
                                 width: 5rem;
                                 height: 5rem;
-                                background-image: url(../img/q1@2x.png);
+                                background-image: url(../img/gold.svg);
                                 background-size: contain;
                                 vertical-align: middle;
                                 margin-right: 2rem;
@@ -169,12 +181,13 @@
         &__title {
             font-size: 1.8rem;
             margin-bottom: 2rem;
+            min-width: 90rem;
             position: relative;
 
             &::before {
                 content: "";
                 position: absolute;
-                right: 62%;
+                left: 38%;
                 height: 2.5rem;
                 width: 0;
                 border: solid 1px $primary-color;
@@ -183,7 +196,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                left: 62%;
+                right: 38%;
                 height: 2.5rem;
                 border: solid 1px $primary-color;
                 transform: rotate(45deg);
@@ -196,6 +209,10 @@
             img {
                 width: 7rem;
             }
+        }
+
+        &__btn {
+            @include button();
         }
     };
 }

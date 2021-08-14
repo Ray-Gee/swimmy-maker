@@ -2,69 +2,72 @@
     background: $background-color;
     margin-top: -7px;
     
-    .funding__wrap {
-        padding: 50px 0;        
+    .container {
+        padding-top: 5rem;        
+        padding-bottom: 5rem;        
 
-        .funding__heading img{
-            width: 600px;
-            position: relative;
-            left: calc(50% - 300px);
-        }
+        .funding__title {
+
+            img{
+                width: 60rem;
+                margin-left: 5vw;
+            }
+        } 
         
         .funding__content {
-            position: relative;
             display: flex;
+            // position: relative;
             
             .circles {
                 display: flex;
+                align-items: center;
                 position: relative;
-                left: calc(50% - 450px);
                 
                 .maker-img {
-                    height: 148px;
+                    height: 14.8rem;
                     position: relative;
-                    top: 45px;
                 }
                 
                 .dotted {
                     @include dotted-line;
-                    position: relative;
-                    top: 120px;
+                    margin: 0 -3rem;
                 }
                 
                 .funding-circle {
                     position: relative;
+
                     p {
-                        font-size: 11px;
+                        font-size: 1rem;
+                        white-space: nowrap;
                     }
                     
                     .funding-img {
-                        width: 280px;
+                        width: 28rem;
                     }
                     
                     .project-manager {
                         position: absolute;
-                        top: 7px;
-                        left: 88px;
+                        top: 0.7rem;
+                        left: 8.8rem;
                         
                         .gray-circle {
                             position: absolute;
-                            width: 110px;
+                            width: 11rem;
                         }
                         
                         &__content {
                             text-align: center;
-                            width: 70px;
+                            width: 7rem;
                             position: absolute;
-                            top: 15px;
-                            left: 20px;
+                            top: 1.5rem;
+                            left: 2.3rem;
                         }
 
                         .arrow {
                             position: relative;
-                            top: 85px;
+                            top: 8.5rem;
                             left: 80px;
-                            width: 90%;
+                            width: 1.3rem;
                             transform:rotate(-40deg);
                             z-index: 1;
                         }
@@ -92,8 +95,9 @@
 
                         .arrow {
                             position: relative;
-                            top: 120px;
-                            left: 30px;
+                            top: 12.5rem;
+                            left: 3.2rem;
+                            width: 1.5rem;
                             transform:rotate(90deg);
                             z-index: 1;
                         }
@@ -106,28 +110,27 @@
                         
                         .gray-circle {
                             position: absolute;
-                            width: 110px;
-                            top: 100px;
-                            left: 50px;
+                            width: 11rem;
+                            top: 10rem;
+                            left: 5rem;
                         }
                         
                         &__content {
                             text-align: center;
-                            // width: 80px;
                             position: absolute;
-                            top: 121px;
-                            left: 82px;
+                            top: 12.1rem;
+                            left: 8.2rem;
 
                             img {
-                                width: 50px;
+                                width: 5rem;
                             }
                         }
 
                         .arrow {
                             position: relative;
-                            top: 78px;
-                            left: 120px;
-                            width: 90%;
+                            top: 7.8rem;
+                            left: 13rem;
+                            width: 1.4rem;
                             transform:rotate(40deg);
                             z-index: 1;
                         }
@@ -137,36 +140,42 @@
             
             .funding__text {
                 font-size: 1.4rem;
-                width: 30rem;
-                margin: auto 0;
-                position: absolute;
-                top: 5rem;
-                right: 13%;
-                
-                .secondary {
-                    color: $secondary-color;
-                    text-align: center;
+                min-width: 32rem;
+                padding: 5rem 4rem;
+                margin-left: 6rem;
+
+                p {
+                    min-width: 28.5rem;
                 }
-                
-                .dotted {
-                    @include dotted-line();
-                    width: 45px;
-                }
-                
-                .dotted__before {
-                    transform:rotate(45deg);
+                .funding__area {
                     position: relative;
-                    top: 2.3rem;
-                    left: 0px;
+                    min-width: 28.5rem;
+                    
+                    .secondary {
+                        color: $secondary-color;
+                        text-align: center;
+                    }
+                    
+                    .dotted {
+                        @include dotted-line();
+                        width: 4.5rem;
+                    }
+                    
+                    .dotted__before {
+                        transform:rotate(45deg);
+                        position: absolute;
+                        top: 2rem;
+                        left: -1rem;
+                    }
+                    
+                    .dotted__after {
+                        transform:rotate(-45deg);
+                        position: absolute;
+                        top: 2rem;
+                        right: -1rem;
+                    }
+                    
                 }
-                
-                .dotted__after {
-                    transform:rotate(-45deg);
-                    position: relative;
-                    top: -2rem;
-                    left: 260px;
-                }
-                
             }
         }
     }

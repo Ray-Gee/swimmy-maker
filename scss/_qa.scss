@@ -1,5 +1,6 @@
 .qa {
     margin-bottom: 30rem;
+    user-select: none;
 
     &__lead {
         color: $secondary-color;
@@ -21,22 +22,27 @@
             .question__text {
                 padding: 1rem 2rem;
             }
-            .plus {
-                display: block;
-                width: 26px;
-                height: 2px;
-                background-color: $primary-color;
-                margin-right: 2rem;
-                position: relative;
-                top: 2.2rem;
-    
-                &::after {
-                    content: '';
+
+            .plus__area {
+                cursor: pointer;
+
+                .plus {
+                    display: block;
                     width: 26px;
                     height: 2px;
                     background-color: $primary-color;
-                    transform: rotate(90deg);
-                    display: block;
+                    margin-right: 2rem;
+                    position: relative;
+                    top: 2.2rem;
+                    
+                    &::after {
+                        content: '';
+                        width: 26px;
+                        height: 2px;
+                        background-color: $primary-color;
+                        transform: rotate(90deg);
+                        display: block;
+                    }
                 }
             }
         }

@@ -1,7 +1,7 @@
 .collaboration {
-    margin-top: -7px;
     
     .collaboration__area {
+        margin-top: -7px;
         background-color: #C8E7E9;
         height: 60rem;
     }
@@ -22,9 +22,11 @@
     &__img {
         margin-top: 5rem;
         text-align: center;
-
+        
         img {
             width: 50%;
+            min-width: 34rem;
+            max-width: 43rem;
             position: relative;
             z-index: 1;
         }
@@ -39,6 +41,16 @@
         }
     };
     
+    .container {
+        position: relative;
+
+        .bg1 {
+            width: 80rem;
+            position: absolute;
+            left: -20rem;
+        }
+        
+    }
 
     &__grid {
         display: grid;
@@ -54,6 +66,12 @@
 
         .top-left {
             font-size: 2.4rem;
+            font-weight: bold;
+        }
+
+        .bg2 {
+            width: 20rem;
+            position: absolute;
         }
 
         .middle-left {
@@ -62,18 +80,24 @@
                 width: 100%;
             };
         }
+
+        .bottom-right {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
     }
 
-    .boundary {
+    .boundary-fishes {
         width: 80%;
 
-        &-fishes::after {
+        &::after {
             content: url(../img/fishes@2x.png);
             display: inline-block;
-            width: 100px;
-            height: 100px;
+            width: 10rem;
+            height: 10rem;
             position: relative;
-            right: 12rem;
+            top: -30rem;
+            left: 85%;
         }
     }
 

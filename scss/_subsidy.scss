@@ -1,94 +1,105 @@
 .subsidy {
-    margin: 50px 0;
-
-    .subsidy__wrap {
-        // position: relative;
-        // width: 100%;
+    
+    .container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         
-        .subsidy__heading img{
-            width: 600px;
-            position: relative;
-            left: calc(50% - 300px);
+        .subsidy__title {
+
+            img {
+                width: 60rem;
+                margin-left: 5vw;
+            }
         }
         
         .subsidy__content {
             display: flex;
-            position: relative;
+            // position: relative;
             
             .circles {
                 display: flex;
+                align-items: center;
                 position: relative;
-                left: calc(50% - 450px);
                 
                 .maker-img {
-                    height: 148px;
+                    height: 14.8rem;
                     position: relative;
-                    top: 45px;
+                    z-index: 1;
                 }
-                
+
                 .dotted {
-                    @include dotted-line();
-                    position: relative;
-                    top: 120px;
+                    @include dotted-line;
+                    margin: 0 -3rem;
                 }
+
+                // .orange-line {
+                //     height: 200%;
+                //     width: 15%;
+                //     margin: 0 -5px;
+                // }
                 
                 .subsidy-circle {
                     position: relative;
 
                     p {
-                        font-size: 11px;
+                        font-size: 1rem;
+                        white-space: nowrap;
                     }
                     
                     .subsidy-img {
-                        width: 250px;
+                        width: 27rem;
                     }
                     
                     .project-manager {
                         position: absolute;
-                        top: 10px;
-                        left: 68px;
+                        top: 1rem;
+                        left: 8rem;
                         
                         .gray-circle {
                             position: absolute;
-                            width: 110px;
+                            width: 11rem;
                         }
                         
                         &__content {
                             text-align: center;
-                            width: 70px;
+                            width: 7rem;
                             position: absolute;
-                            top: 15px;
-                            left: 20px;
+                            top: 1.5rem;
+                            left: 2rem;
                         }
                     }
                     
                     .subsidy-team {
                         position: absolute;
-                        top: 25px;
-                        left: 17px;
+                        top: 3.5rem;
+                        left: 3rem;
                         
                         .gray-circle {
                             position: absolute;
-                            width: 110px;
-                            top: 100px;
-                            left: 50px;
+                            width: 11rem;
+                            top: 10rem;
+                            left: 5rem;
                         }
                         
                         &__content {
                             text-align: center;
-                            width: 70px;
+                            width: 7rem;
                             position: absolute;
-                            top: 121px;
-                            left: 71px;
+                            top: 12rem;
+                            left: 7rem;
                         }
 
                         &::before {
                             content: '';
-                            background-image: url(img/arrow@2x.png);
-                            background-size: contain;
+                            background-image: url(../img/arrow.svg);
+                            background-size: cover;
+                            display: inline-block;
                             z-index: 1;
-                            width: 50px;
-                            height: 50px;
+                            width: 1.6rem;
+                            height: 5.5rem;
+                            position: absolute;
+                            top: 6.3rem;
+                            left: 9.6rem;
                         }
                     }
                 }
@@ -96,45 +107,41 @@
             
             .subsidy__text {
                 font-size: 1.4rem;
-                width: 30rem;
-                margin: auto 0;
-                position: absolute;
-                right: 13%;
-                top: 5rem;
-                
-                .subsidy__title {
+                min-width: 32rem;
+                padding: 5rem 4rem;
+                margin-left: 6rem;
+
+                p {
+                    min-width: 28.5rem;
+                }
+                .subsidy__area {
+                    position: relative;
+                    min-width: 28.5rem;
 
                     .secondary {
                         color: $secondary-color;
                         text-align: center;
                     }
-                    
-                    .dotted__before {
 
-                        &::before {
-                            border-bottom: 2px dotted $secondary-color;
-                            content: "";
-                            position: absolute;
-                            top: 20px;
-                            left: -15px;
-                            transform: rotate(45deg);
-                            width: 45px;
-                        }
+                    .dotted {
+                        @include dotted-line();
+                        width: 4.5rem;
+                    }
+
+                    .dotted__before {
+                        transform:rotate(45deg);
+                        position: absolute;
+                        top: 2rem;
+                        left: -1rem;
                     }
 
                     .dotted__after {
-
-                        &::after {
-                            border-bottom: 2px dotted $secondary-color;
-                            content: "";
-                            position: absolute;
-                            top: 20px;
-                            right: 0;
-                            transform: rotate(-45deg);
-                            width: 45px;
-                        }
+                        transform:rotate(-45deg);
+                        position: absolute;
+                        top: 2rem;
+                        right: -1rem;
                     }
-
+                    
                 }
                 
             }

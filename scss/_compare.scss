@@ -1,9 +1,8 @@
 .compare {
 
-    &__wrap {
+    .container {
+        margin-top: 10%;
 
-        padding: 20%;
-        
         .compare__heading {
             margin-bottom: 50px;
             
@@ -33,7 +32,6 @@
             
             p {
                 font-size: 1.5rem;
-                // width: 40%;
             }
             
             &__draw {

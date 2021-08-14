@@ -4,7 +4,21 @@
     height: 30rem;
     position: relative;
 
+    .btn {
+        background: #C8E7E9;
+        border-bottom-right-radius: 3rem;
+        border-top-right-radius: 3rem;
+        padding: 1rem 1.5rem;
+        box-shadow: 0 1rem 1.5rem 0.5rem rgba(0, 0, 0, .2);
+    }
     
+    .swimmy-left {
+        width: 7rem;
+        position: relative;
+        top: -20rem;
+        left: 0;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -63,15 +77,15 @@
         top: -51rem;
 
         .swimmy {
-            width: 20rem;
+            width: 18rem;
         }
 
         .swimmy2 {
-            width: 18rem;
+            width: 14rem;
         }
 
         .swimmy3 {
-            width: 18rem;
+            width: 14rem;
         }
     }
 }

@@ -1,6 +1,6 @@
      
 .congeniality {
-    margin-top: 6rem;
+    margin-top: 12rem;
     font-size: 1.8rem;
     
     img {
@@ -10,6 +10,7 @@
     &__list {
         display: flex;
         margin-top: 3rem;
+        user-select: none;
 
         .font-space {
             letter-spacing: 0.8em
@@ -43,10 +44,12 @@
     .proper {
         
         .true-false {
-            // display: none;
             display: flex;
             justify-content: space-around;
             margin-top: 3.7rem;
+            user-select: none;
+            // opacity: 0;
+
             
             .true, .false {
                 display: grid;
@@ -77,10 +80,11 @@
     .stability {
         
         .true-false {
-            // display: flex;
             display: none;
             justify-content: space-around;
             margin-top: 3.7rem;
+            user-select: none;
+
             
             .true, .false {
                 display: grid;
@@ -111,10 +115,10 @@
     .versatility {
         
         .true-false {
-            // display: flex;
             display: none;
             justify-content: space-around;
             margin-top: 3.7rem;
+            user-select: none;
             
             .true, .false {
                 display: grid;
