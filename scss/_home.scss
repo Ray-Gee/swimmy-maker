@@ -1,81 +1,142 @@
-.home {
-    background: url(../img/top.jpg) no-repeat;
-    background-size: cover;
-    height: 800px;
-}
-
-.home-title {
-    padding: 8vh 0 0 22vw;
-    color: $primary-color;
-
-    &__sub {
-        margin-left: 17px;
-        position: relative;
-
-        &:after {
-            content: "PORTEARTHスイミー";
-            font-size: 25%;
-            position: absolute;
-            top: 50px;
-            left: 20px;
-        }
-    }
-
-    h1 {
-        font-size: 50px;
-        font-weight: 540;
-    }
-    p {
-        font-size: 17px;
-    }
-
-    .maker-btn {
-        width: 10rem;
-        line-height: 2rem;
-        text-align: center;
-        background: #F28E3D;
-        border-radius: 6px;
-        color: #fff;
-        font-weight: 100;
-        margin-top: 10px;
-    }
-}
-
-
 // サイドメニュー
 .aside {
-    width: 100px;
+    position: relative;
 
     .menu {
-        margin: 10px 12px;
         position: absolute;
+        top: 2rem;
+        left: 1.6rem;
     }
     .operator {
         top: 2rem;
     }
     .twitter {
-        color: $primary-color;
         top: 5rem;
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+
+    .menu-btn {
+        position: absolute;
+        height: 20px;
+        width: 28px;
+        cursor: pointer;
+        @include transition-ease;
+
+        &__burger {
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            width: 28px;
+            height: 3px;
+            background: $primary-color;
+            @include transition-ease;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -8px;
+                width: 28px;
+                height: 3px;
+                background: $primary-color;
+                @include transition-ease
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                width: 20px;
+                height: 3px;
+                background: $primary-color;
+                @include transition-ease;
+            }
+
+            &.open {
+                background: transparent;
+
+                &:before {
+                    transform: rotate(45deg) translate(5px, 8px);
+                }
+
+                &:after {
+                    width: 28px;
+                    transform: rotate(-45deg) translate(3px, -7px);
+                }
+            }
+        }
+    }
+
+}
+
+// トップページ
+.home {
+    background: url(../img/top.jpg) no-repeat;
+    background-size: cover;
+    height: 80rem;
+
+    &__title {
+        position: relative;
+        top: 8vh;
+        left: 22vw;
+
+        &__sub {
+            margin-left: 17px;
+            position: relative;
+
+            &:after {
+                content: "PORTEARTHスイミー";
+                font-size: 25%;
+                position: absolute;
+                top: 50px;
+                left: 20px;
+            }
+        }
+
+        
+
+        .maker-btn {
+            width: 20rem;
+            padding: 0.5rem 1.2rem;
+            text-align: center;
+            background: $secondary-color;
+            border-radius: 0.6rem;
+            color: #fff;
+            font-weight: 100;
+            margin-top: 1rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 0;
+    }
+    &__sub-heading {
+        letter-spacing: 0.4em;
     }
 }
 
 
 // ワーカー向けボタン
 .right-btn {
-    margin-top: 300px;
+    margin-top: 30rem;
     text-align: end;
 
     .btn {
-        font-size: 14px;
         background: #fff;
-        border-bottom-left-radius: 20px;
-        border-top-left-radius: 20px;
+        border-bottom-left-radius: 3rem;
+        border-top-left-radius: 3rem;
         color: $primary-color;
-        padding: 13px;
-        box-shadow: 0 10px 15px 5px rgba(0, 0, 0, .2);
+        padding: 1.8rem;
+        box-shadow: 0 1rem 1.5rem 0.5rem rgba(0, 0, 0, .2);
     }
 
-    .btn:before {
-        content : url("../img/swimmy.png");
+    &__img {
+        width: 4.5rem;
+        position: relative;
+        top: 1rem;
     }
+
 }
