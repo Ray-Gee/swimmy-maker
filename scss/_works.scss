@@ -44,6 +44,7 @@
             margin-top: 7rem;
     
             .works__title {
+                padding: 0 20%;
                 display: flex;
 
                 .logo {
@@ -57,20 +58,19 @@
     
             .profile {
                 margin-top: 6rem;
-                display: flex;
-                justify-content: space-around;
     
                 &__title {
+                    padding: 0 20%;
     
                     h3 {
-                        font-size: 1.5rem;
+                        font-size: 1.4rem;
                         padding-left: 2rem;
                         margin-bottom: 3rem;
                         border-left: 1.5px solid #000;
                     }
     
                     p {
-                        font-size: 1.6rem;
+                        font-size: 1.5rem;
                         line-height: 3.3rem;
 
                         span {
@@ -113,166 +113,170 @@
                     }
                 }
                 
-                &__story {
-                    width: 90rem;
-                    
-                    .profile__list {
-                        margin-top: 8rem;
-    
-                        h3 {
-                            font-size: 1.7rem;
-                            
-                            &::before {
-                                content: '';
-                                display: inline-block;
-                                width: 5rem;
-                                height: 5rem;
-                                background-image: url(../img/gold.svg);
-                                background-size: contain;
-                                vertical-align: middle;
-                                margin-right: 2rem;
-                            }
-                        }
-    
-                        p {
-                            font-size: 1.3rem;
-                            line-height: 3rem;
-    
-                            span {
-                                font-weight: bold;
-                            } 
-                        }
+                .profile__list {
+                    margin-top: 8rem;
+
+                    h3 {
+                        font-size: 1.7rem;
                         
-                        &__group1 {
-                            margin-bottom: 3rem;
-    
-                            &::before {
-                                content: 'Q1';
-                                font-size: 3rem;
-                                color: #fff;
-                                position: relative;
-                                top: 4.8rem;
-                                left: 0.5rem;
-                            }
-                        }
-                        &__group2 {
-    
-                            &::before {
-                                content: 'Q2';
-                                font-size: 3rem;
-                                color: #fff;
-                                position: relative;
-                                top: 4.8rem;
-                                left: 0.4rem;
-                            }
-                        }
-                        &__group3 {
-    
-                            &::before {
-                                content: 'Q3';
-                                font-size: 3rem;
-                                color: #fff;
-                                position: relative;
-                                top: 4.8rem;
-                                left: 0.4rem;
-                            }
-                        }
-                        &__group4 {
-    
-                            &::before {
-                                content: 'Q4';
-                                font-size: 3rem;
-                                color: #fff;
-                                position: relative;
-                                top: 4.8rem;
-                                left: 0.4rem;
-                            }
-                        }
-                        &__group5 {
-    
-                            &::before {
-                                content: 'Q5';
-                                font-size: 3rem;
-                                color: #fff;
-                                position: relative;
-                                top: 4.8rem;
-                                left: 0.4rem;
-                            }
-                        }
-                        &__group6 {
-    
-                            &::before {
-                                content: 'Q6';
-                                font-size: 3rem;
-                                color: #fff;
-                                position: relative;
-                                top: 4.8rem;
-                                left: 0.4rem;
-                            }
-                        }
-
-                        .kuretake-middle {
-                            margin-top: 10rem;
-                            display: flex;
-                            position: relative;
-
-                            .kuretake__img2 {
-                                img {
-                                }
-                            }
-
-                            .kuretake__img-right {
-                                img {
-                                    width: 50rem;
-                                    height: 70rem;
-                                    position: absolute;
-                                    top: -20rem;
-                                    right: -70rem;
-                                    z-index: -1;
-                                    transform: rotate(135deg);
-                                }
-                            }
-                            &__right {
-                                margin-left: 10rem;
-                            }
-                        }
-                        .designsetta-middle {
-                            margin-top: 10rem;
-                            display: flex;
-                            position: relative;
-
-                            // .kuretake__img2 {
-                            //     img {
-                            //     }
-                            // }
-
-                            .designsetta__img-right {
-                                img {
-                                    width: 50rem;
-                                    height: 70rem;
-                                    position: absolute;
-                                    top: -20rem;
-                                    right: -70rem;
-                                    z-index: -1;
-                                    transform: rotate(135deg);
-                                }
-                            }
-                            &__right {
-                                margin-left: 10rem;
-                            }
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 5rem;
+                            height: 5rem;
+                            background-image: url(../img/gold.svg);
+                            background-size: contain;
+                            vertical-align: middle;
+                            margin-right: 2rem;
                         }
                     }
 
+                    p {
+                        font-size: 1.3rem;
+                        line-height: 3rem;
+
+                        span {
+                            font-weight: bold;
+                        } 
+                    }
+                    
+                    &__group1 {
+                        margin-bottom: 3rem;
+
+                        &::before {
+                            content: 'Q1';
+                            font-size: 3rem;
+                            color: #fff;
+                            position: relative;
+                            top: 4.8rem;
+                            left: 0.5rem;
+                        }
+                    }
+                    &__group2 {
+
+                        &::before {
+                            content: 'Q2';
+                            font-size: 3rem;
+                            color: #fff;
+                            position: relative;
+                            top: 4.8rem;
+                            left: 0.4rem;
+                        }
+                    }
+                    &__group3 {
+
+                        &::before {
+                            content: 'Q3';
+                            font-size: 3rem;
+                            color: #fff;
+                            position: relative;
+                            top: 4.8rem;
+                            left: 0.4rem;
+                        }
+                    }
+                    &__group4 {
+
+                        &::before {
+                            content: 'Q4';
+                            font-size: 3rem;
+                            color: #fff;
+                            position: relative;
+                            top: 4.8rem;
+                            left: 0.4rem;
+                        }
+                    }
+                    &__group5 {
+
+                        &::before {
+                            content: 'Q5';
+                            font-size: 3rem;
+                            color: #fff;
+                            position: relative;
+                            top: 4.8rem;
+                            left: 0.4rem;
+                        }
+                    }
+                    &__group6 {
+
+                        &::before {
+                            content: 'Q6';
+                            font-size: 3rem;
+                            color: #fff;
+                            position: relative;
+                            top: 4.8rem;
+                            left: 0.4rem;
+                        }
+                    }
+
+                    .kuretake-top, .designsetta-top {
+                        display: flex;
+                        padding: 0 20%;
+                    }
+
+                    .kuretake-middle, .designsetta-middle {
+                        margin-top: 3rem;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+
+                        .kuretake__img-left {
+                            img {
+                                min-width: 42rem;
+                                width: 40vw;
+                                max-width: 50vw;
+                            }
+                        }
+
+                        .kuretake__img-bg {
+                            img {
+                                width: 50rem;
+                                height: 70rem;
+                                position: absolute;
+                                top: -20rem;
+                                right: -70rem;
+                                z-index: -1;
+                                transform: rotate(135deg);
+                            }
+                        }
+                        &__right {
+                            margin-left: 10rem;
+                        }
+                    }
+                    .kuretake-bottom, .designsetta-bottom {
+                        padding: 0 20%;
+                    }
+
+                    .designsetta-middle {
+                        margin-top: 3rem;
+                        display: flex;
+                        position: relative;
+
+                        .designsetta__img-right {
+                            img {
+                                width: 50rem;
+                                height: 70rem;
+                                position: absolute;
+                                top: -20rem;
+                                right: -70rem;
+                                z-index: -1;
+                                transform: rotate(135deg);
+                            }
+                        }
+                        &__right {
+                            margin-left: 10rem;
+                        }
+                    }
                 }
             }
             
-
-            
-
         }
     }
-    .kuretake__img3 {
+    .kuretake__img3, .designsetta__img3 {
         text-align: right;
+        img {
+
+            width: 60vw;
+        }
     }
 
     .plus__area {
