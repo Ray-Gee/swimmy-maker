@@ -267,25 +267,33 @@
                         }
                     }
                 }
+
+                .expand-kuretake {
+                    display: none;
+                }
+                .expand-designsetta {
+                    display: none;
+                }
             }
             
         }
     }
+
     .kuretake__img3, .designsetta__img3 {
         text-align: right;
         img {
-
             width: 60vw;
         }
     }
 
-    .plus__area {
+    .expand__area {
         text-align: right;
         cursor: pointer;
         display: flex;
         justify-content: flex-end;
+        margin-right: 20rem;
 
-        .plus {
+        .expand {
             display: block;
             width: 26px;
             height: 2px;
@@ -305,6 +313,25 @@
         }
     }
 
+    .close__area {
+        text-align: right;
+        cursor: pointer;
+        // display: flex;
+        display: none;
+        justify-content: flex-end;
+        margin-right: 20rem;
+
+        .close {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $primary-color;
+            margin-top: 1.1rem;
+            margin-right: 2rem;
+            margin-left: auto;
+        }
+    }
+
     
 
     .others {
@@ -314,7 +341,6 @@
         &__title {
             font-size: 1.8rem;
             margin-bottom: 2rem;
-            // min-width: 90rem;
             position: relative;
 
             &::before {

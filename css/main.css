@@ -1599,19 +1599,26 @@
 .works .works__company__content .profile .profile__list .designsetta-middle__right {
   margin-left: 10rem;
 }
+.works .works__company__content .profile .expand-kuretake {
+  display: none;
+}
+.works .works__company__content .profile .expand-designsetta {
+  display: none;
+}
 .works .kuretake__img3, .works .designsetta__img3 {
   text-align: right;
 }
 .works .kuretake__img3 img, .works .designsetta__img3 img {
   width: 60vw;
 }
-.works .plus__area {
+.works .expand__area {
   text-align: right;
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
+  margin-right: 20rem;
 }
-.works .plus__area .plus {
+.works .expand__area .expand {
   display: block;
   width: 26px;
   height: 2px;
@@ -1620,13 +1627,29 @@
   margin-right: 2rem;
   margin-left: auto;
 }
-.works .plus__area .plus::after {
+.works .expand__area .expand::after {
   content: "";
   width: 26px;
   height: 2px;
   background-color: #474359;
   transform: rotate(90deg);
   display: block;
+}
+.works .close__area {
+  text-align: right;
+  cursor: pointer;
+  display: none;
+  justify-content: flex-end;
+  margin-right: 20rem;
+}
+.works .close__area .close {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #474359;
+  margin-top: 1.1rem;
+  margin-right: 2rem;
+  margin-left: auto;
 }
 .works .others {
   margin-top: 6rem;
