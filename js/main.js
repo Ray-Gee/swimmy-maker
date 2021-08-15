@@ -217,4 +217,38 @@ function toggleAnswer5() {
 }
 
 
-const expand = 
+const expandK = document.querySelector('#expandK')
+const closeK = document.querySelector('#closeK')
+const closeAreaK = document.querySelector('.close__areaK')
+const areaKeretake = document.querySelector('.expand-kuretake')
+const closeAreaD = document.querySelector('.close__areaD')
+const expandD = document.querySelector('#expandD')
+const closeD = document.querySelector('#closeD')
+const areaDesignsetta = document.querySelector('.expand-designsetta')
+
+expandK.addEventListener('click', openK)
+closeK.addEventListener('click', closeAreaKuretake)
+expandD.addEventListener('click', openD)
+closeD.addEventListener('click', closeAreaDesign)
+
+function openK() {
+    areaKeretake.style.display = 'block'
+    closeAreaK.style.display = 'flex'
+    expandK.style.display = 'none'
+}
+function closeAreaKuretake() {
+    areaKeretake.style.display = 'none'
+    closeAreaK.style.display = 'none'
+    expandK.style.display = 'flex'
+}
+function openD() {
+    areaDesignsetta.style.display = 'block'
+    closeAreaD.style.display = 'flex'
+    expandD.style.display = 'none'
+}
+function closeAreaDesign() {
+    areaDesignsetta.style.display = 'none'
+    closeAreaD.style.display = 'none'
+    expandD.style.display = 'flex'
+}
+
