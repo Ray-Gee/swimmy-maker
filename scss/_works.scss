@@ -6,7 +6,6 @@
 
     &__heading {
         font-size: 4rem;
-        // font-weight: 100;
     }
 
     &__heading__area {
@@ -19,6 +18,7 @@
     }
 
     .works__company {
+        margin-bottom: 20rem;
 
         &__area {
             position: relative;
@@ -81,14 +81,14 @@
     
     
                 &__img {
-                    margin-left: 3rem;
+                    margin-left: 10rem;
+                    text-align: center;
     
                     .detail {
                         font-size: 1.5rem;
                         text-align: center;
                         color: #C7A778;
                         position: relative;
-                        left: 7.5rem;
     
                         &::before {
                             content: url('../img/line_gold.png');
@@ -104,7 +104,8 @@
                         }
                     }
                     img {
-                        width: 170%;
+                        width: 100%;
+                        min-width: 40rem;
                     }
 
                     .profile__text {
@@ -165,12 +166,140 @@
                                 left: 0.4rem;
                             }
                         }
+                        &__group3 {
+    
+                            &::before {
+                                content: 'Q3';
+                                font-size: 3rem;
+                                color: #fff;
+                                position: relative;
+                                top: 4.8rem;
+                                left: 0.4rem;
+                            }
+                        }
+                        &__group4 {
+    
+                            &::before {
+                                content: 'Q4';
+                                font-size: 3rem;
+                                color: #fff;
+                                position: relative;
+                                top: 4.8rem;
+                                left: 0.4rem;
+                            }
+                        }
+                        &__group5 {
+    
+                            &::before {
+                                content: 'Q5';
+                                font-size: 3rem;
+                                color: #fff;
+                                position: relative;
+                                top: 4.8rem;
+                                left: 0.4rem;
+                            }
+                        }
+                        &__group6 {
+    
+                            &::before {
+                                content: 'Q6';
+                                font-size: 3rem;
+                                color: #fff;
+                                position: relative;
+                                top: 4.8rem;
+                                left: 0.4rem;
+                            }
+                        }
+
+                        .kuretake-middle {
+                            margin-top: 10rem;
+                            display: flex;
+                            position: relative;
+
+                            .kuretake__img2 {
+                                img {
+                                }
+                            }
+
+                            .kuretake__img-right {
+                                img {
+                                    width: 50rem;
+                                    height: 70rem;
+                                    position: absolute;
+                                    top: -20rem;
+                                    right: -70rem;
+                                    z-index: -1;
+                                    transform: rotate(135deg);
+                                }
+                            }
+                            &__right {
+                                margin-left: 10rem;
+                            }
+                        }
+                        .designsetta-middle {
+                            margin-top: 10rem;
+                            display: flex;
+                            position: relative;
+
+                            // .kuretake__img2 {
+                            //     img {
+                            //     }
+                            // }
+
+                            .designsetta__img-right {
+                                img {
+                                    width: 50rem;
+                                    height: 70rem;
+                                    position: absolute;
+                                    top: -20rem;
+                                    right: -70rem;
+                                    z-index: -1;
+                                    transform: rotate(135deg);
+                                }
+                            }
+                            &__right {
+                                margin-left: 10rem;
+                            }
+                        }
                     }
+
                 }
+            }
+            
+
+            
+
+        }
+    }
+    .kuretake__img3 {
+        text-align: right;
+    }
+
+    .plus__area {
+        text-align: right;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+
+        .plus {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $primary-color;
+            margin-top: 1.1rem;
+            margin-right: 2rem;
+            margin-left: auto;
+
+            &::after {
+                content: '';
+                width: 26px;
+                height: 2px;
+                background-color: $primary-color;
+                transform: rotate(90deg);
+                display: block;
             }
         }
     }
-
 
     
 
@@ -181,13 +310,13 @@
         &__title {
             font-size: 1.8rem;
             margin-bottom: 2rem;
-            min-width: 90rem;
+            // min-width: 90rem;
             position: relative;
 
             &::before {
                 content: "";
                 position: absolute;
-                left: 38%;
+                left: 35%;
                 height: 2.5rem;
                 width: 0;
                 border: solid 1px $primary-color;
@@ -196,7 +325,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                right: 38%;
+                right: 35%;
                 height: 2.5rem;
                 border: solid 1px $primary-color;
                 transform: rotate(45deg);

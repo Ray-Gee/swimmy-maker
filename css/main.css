@@ -1312,37 +1312,60 @@
 
 .team-japan {
   margin-top: 12rem;
+}
+.team-japan__top {
   position: relative;
 }
-.team-japan .men_women {
+.team-japan__top .team-japan__bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team-japan__top .men_women {
   width: 22.3%;
   position: absolute;
   top: -7rem;
   left: 20rem;
 }
-.team-japan .line {
+.team-japan__top .team-japan__title {
   position: relative;
-  top: -23rem;
+  top: -8rem;
+  left: 15rem;
+}
+@media (max-width: 87.4375em) {
+  .team-japan__top .team-japan__title {
+    position: relative;
+    top: 0rem;
+    left: -5rem;
+  }
+  .team-japan__top .team-japan__title p {
+    font-size: 1.4rem;
+  }
+  .team-japan__top .team-japan__title h2 {
+    font-size: 3rem;
+  }
+}
+.team-japan__top .team-japan__title .line {
+  position: absolute;
+  top: -22rem;
   left: 54rem;
 }
-.team-japan .line2 {
-  position: relative;
-  top: -14rem;
-  left: 48rem;
+.team-japan__top .team-japan__title .line2 {
+  position: absolute;
+  top: -11rem;
+  left: 54rem;
 }
-.team-japan p {
-  font-size: 1.5rem;
+.team-japan__top .team-japan__title p {
   color: #fff;
-  position: relative;
-  top: -33rem;
+  position: absolute;
+  top: -29rem;
   left: 63rem;
 }
-.team-japan h2 {
-  font-size: 3.5rem;
+.team-japan__top .team-japan__title h2 {
   color: #fff;
   font-weight: 100;
-  position: relative;
-  top: -30.5rem;
+  position: absolute;
+  top: -20.5rem;
   left: 63rem;
 }
 
@@ -1372,6 +1395,9 @@
 }
 .works__heading__area div {
   margin-left: 3rem;
+}
+.works .works__company {
+  margin-bottom: 20rem;
 }
 .works .works__company__area {
   position: relative;
@@ -1422,14 +1448,14 @@
   font-weight: bold;
 }
 .works .works__company__content .profile__img {
-  margin-left: 3rem;
+  margin-left: 10rem;
+  text-align: center;
 }
 .works .works__company__content .profile__img .detail {
   font-size: 1.5rem;
   text-align: center;
   color: #C7A778;
   position: relative;
-  left: 7.5rem;
 }
 .works .works__company__content .profile__img .detail::before {
   content: url("../img/line_gold.png");
@@ -1444,7 +1470,8 @@
   right: 3rem;
 }
 .works .works__company__content .profile__img img {
-  width: 170%;
+  width: 100%;
+  min-width: 40rem;
 }
 .works .works__company__content .profile__img .profile__text {
   font-size: 1rem;
@@ -1494,6 +1521,98 @@
   top: 4.8rem;
   left: 0.4rem;
 }
+.works .works__company__content .profile__story .profile__list__group3::before {
+  content: "Q3";
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  top: 4.8rem;
+  left: 0.4rem;
+}
+.works .works__company__content .profile__story .profile__list__group4::before {
+  content: "Q4";
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  top: 4.8rem;
+  left: 0.4rem;
+}
+.works .works__company__content .profile__story .profile__list__group5::before {
+  content: "Q5";
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  top: 4.8rem;
+  left: 0.4rem;
+}
+.works .works__company__content .profile__story .profile__list__group6::before {
+  content: "Q6";
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  top: 4.8rem;
+  left: 0.4rem;
+}
+.works .works__company__content .profile__story .profile__list .kuretake-middle {
+  margin-top: 10rem;
+  display: flex;
+  position: relative;
+}
+.works .works__company__content .profile__story .profile__list .kuretake-middle .kuretake__img-right img {
+  width: 50rem;
+  height: 70rem;
+  position: absolute;
+  top: -20rem;
+  right: -70rem;
+  z-index: -1;
+  transform: rotate(135deg);
+}
+.works .works__company__content .profile__story .profile__list .kuretake-middle__right {
+  margin-left: 10rem;
+}
+.works .works__company__content .profile__story .profile__list .designsetta-middle {
+  margin-top: 10rem;
+  display: flex;
+  position: relative;
+}
+.works .works__company__content .profile__story .profile__list .designsetta-middle .designsetta__img-right img {
+  width: 50rem;
+  height: 70rem;
+  position: absolute;
+  top: -20rem;
+  right: -70rem;
+  z-index: -1;
+  transform: rotate(135deg);
+}
+.works .works__company__content .profile__story .profile__list .designsetta-middle__right {
+  margin-left: 10rem;
+}
+.works .kuretake__img3 {
+  text-align: right;
+}
+.works .plus__area {
+  text-align: right;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+.works .plus__area .plus {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #474359;
+  margin-top: 1.1rem;
+  margin-right: 2rem;
+  margin-left: auto;
+}
+.works .plus__area .plus::after {
+  content: "";
+  width: 26px;
+  height: 2px;
+  background-color: #474359;
+  transform: rotate(90deg);
+  display: block;
+}
 .works .others {
   margin-top: 6rem;
   text-align: center;
@@ -1501,13 +1620,12 @@
 .works .others__title {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  min-width: 90rem;
   position: relative;
 }
 .works .others__title::before {
   content: "";
   position: absolute;
-  left: 38%;
+  left: 35%;
   height: 2.5rem;
   width: 0;
   border: solid 1px #474359;
@@ -1516,7 +1634,7 @@
 .works .others__title::after {
   content: "";
   position: absolute;
-  right: 38%;
+  right: 35%;
   height: 2.5rem;
   border: solid 1px #474359;
   transform: rotate(45deg);

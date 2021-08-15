@@ -1,46 +1,73 @@
 .team-japan {
     margin-top: 12rem;
-    position: relative;
     
-    .men_women {
-        width: 22.3%;
-        position: absolute;
-        top: -7rem;
-        left: 20rem;
-    }
+    &__top {
+        position: relative;
 
-    .line {
-        position: relative;
-        top: -23rem;
-        left: 54rem;
-    }
-    .line2 {
-        position: relative;
-        top: -14rem;
-        left: 48rem;
-    }
+        .team-japan__bg {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        
+        .men_women {
+            width: 22.3%;
+            position: absolute;
+            top: -7rem;
+            left: 20rem;
+        }
+        
+        
+        .team-japan__title {
+            position: relative;
+            top: -8rem;
+            left: 15rem;
 
-    p {
-        font-size: 1.5rem;
-        color: #fff;
-        position: relative;
-        top: -33rem;
-        left: 63rem;
-    }
-    h2 {
-        font-size: 3.5rem;
-        color: #fff;
-        font-weight: 100;
-        position: relative;
-        top: -30.5rem;
-        left: 63rem;
+            @include breakpoint-down(large) {
+                position: relative;
+                top: 0rem;
+                left: -5rem;
+
+                p {
+                    font-size: 1.4rem;
+                }
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+            
+            .line {
+                position: absolute;
+                top: -22rem;
+                left: 54rem;
+            }
+            .line2 {
+                position: absolute;
+                top: -11rem;
+                left: 54rem;
+            }
+            p {
+                color: #fff;
+                position: absolute;
+                top: -29rem;
+                left: 63rem;
+            }
+            h2 {
+                color: #fff;
+                font-weight: 100;
+                position: absolute;
+                top: -20.5rem;
+                left: 63rem;
+            }
+        }
     }
 }
-
-.team-japan__content {
-    display: flex;
-    justify-content: center;
-
+                    
+    .team-japan__content {
+        display: flex;
+        justify-content: center;
+                        
     .baloon {
         margin-right: 10rem;
 
