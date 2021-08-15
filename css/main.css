@@ -174,10 +174,10 @@
   background: #474359;
   color: #fff;
   border-radius: 2rem;
-  padding: 1rem 5rem;
+  padding: 1rem 3rem;
   position: absolute;
-  left: calc(50% - 128px);
-  top: 8%;
+  left: calc(50% - 180px);
+  top: 10%;
   display: flex;
   align-items: center;
 }
