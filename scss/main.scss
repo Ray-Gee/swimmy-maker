@@ -38,6 +38,10 @@ body {
     font-size: 1.6rem;
     letter-spacing: 0.12em;
     font-family: "游ゴシック", "ヒラギノ角ゴProN", "メイリオ", "MS Pゴシック", sans-serif;
+
+    @include breakpoint-down(small) {
+        font-size: 1.3rem;
+    }
 }
 
 h1, h2, h3 {
@@ -53,10 +57,18 @@ h1 {
 h2 {
     font-size: 3.2rem;
     margin-bottom: 1.5rem;
+
+    @include breakpoint-down(small) {
+        font-size: 2rem;
+    }
 }
 
 h3 {
     margin-bottom: 1.5rem;
+
+    @include breakpoint-down(small) {
+        font-size: 1.5rem;
+    }
 }
 
 .boundary {
@@ -65,4 +77,24 @@ h3 {
 
 .container {
     padding: 3% 20%;
+
+    @include breakpoint-down(small) {
+        padding: 3% 2%;
+    }
+}
+
+@include breakpoint-up(medium) {
+    .br-sp {
+        display: none; 
+    }
+
+    .none-pc {
+        display: none;
+    }
+}
+
+@include breakpoint-down(small) {
+    .none-sp {
+        display: none;
+    }
 }

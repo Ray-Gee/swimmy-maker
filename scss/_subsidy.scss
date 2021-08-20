@@ -7,14 +7,18 @@
         .subsidy__title {
 
             img {
-                width: 60rem;
+                width: 50vw;
                 margin-left: 5vw;
+
+                @include breakpoint-down(small) {
+                    width: 90vw;
+                    margin-left: 0;
+                }
             }
         }
         
         .subsidy__content {
             display: flex;
-            // position: relative;
             
             .circles {
                 display: flex;

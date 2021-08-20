@@ -1,28 +1,43 @@
 // サイドメニュー
 .aside {
-    position: relative;
+    position: absolute;
+
+    // @include breakpoint-down(small) {
+    //     position: absolute;
+    //     left: 90%;
+    // }
 
     .menu {
         position: absolute;
         top: 2rem;
         left: 1.6rem;
+
+        @include breakpoint-down(small) {
+            // position: absolute;
+            // top: 2rem;
+            // right: 1rem;
+        }
     }
-    .operator {
-        top: 2rem;
-    }
+
     .twitter {
         top: 5rem;
 
         a {
             color: $primary-color;
         }
+
+        @include breakpoint-down(small) {
+            // position: absolute;
+            // top: 2rem;
+            // right: 1rem;
+        }
     }
 
 
     .menu-btn {
         position: absolute;
-        height: 20px;
-        width: 28px;
+        height: 2rem;
+        width: 2.8rem;
         cursor: pointer;
         @include transition-ease;
 
@@ -78,24 +93,47 @@
     background-size: cover;
     height: 80rem;
 
+    @include breakpoint-down(small) {
+        height: 50rem;
+        width: 100vw;
+        object-position: 50% 100%;
+    }
+
     &__title {
         position: relative;
         top: 8vh;
         left: 22vw;
 
+        @include breakpoint-down(small) {
+           top: 10vh;
+           left: 8vw;
+        }
+
         &__sub {
             margin-left: 17px;
             position: relative;
+
+            @include breakpoint-down(small) {
+                font-size: 2rem;
+                position: absolute;
+                top: 5.3rem;
+                left: -1.4rem;
+            }
 
             &:after {
                 content: "PORTEARTHスイミー";
                 font-size: 25%;
                 position: absolute;
-                top: 50px;
-                left: 20px;
-            }
-        }
+                top: 5rem;
+                left: 2rem;
 
+                @include breakpoint-down(small) {
+                    top: -6rem;
+                    left: 0rem;
+                }
+            }
+
+        }
         
 
         .maker-btn {
@@ -107,6 +145,17 @@
             color: #fff;
             font-weight: 100;
             margin-top: 1rem;
+
+            @include breakpoint-down(small) {
+                margin-top: 2rem;
+            }
+        }
+    }
+    @include breakpoint-down(small) {
+        
+        &__subtitle {
+            font-size: 2rem;
+            margin-top: 3rem;
         }
     }
 
@@ -124,6 +173,11 @@
     margin-top: 30rem;
     text-align: end;
 
+    @include breakpoint-down(small) {
+        margin-top: 10rem;
+        text-align: center;
+    }
+
     .btn {
         background: #fff;
         border-bottom-left-radius: 3rem;
@@ -131,6 +185,10 @@
         color: $primary-color;
         padding: 1.8rem;
         box-shadow: 0 1rem 1.5rem 0.5rem rgba(0, 0, 0, .2);
+
+        @include breakpoint-down(small) {
+            border-radius: 3rem;
+        }
     }
 
     &__img {

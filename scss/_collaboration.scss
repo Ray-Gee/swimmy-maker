@@ -90,6 +90,10 @@
     .boundary-fishes {
         width: 80%;
 
+        img {
+            width: 100%;
+        }
+
         &::after {
             content: url(../img/fishes@2x.png);
             display: inline-block;
