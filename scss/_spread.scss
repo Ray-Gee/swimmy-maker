@@ -7,36 +7,55 @@
         .spread__title {
 
             img {
-                width: 60rem;
+                width: 50vw;
                 margin-left: 5vw;
-                // position: relative;
-                // left: calc(50% - 300px);
+
+                @include breakpoint-down(small) {
+                    width: 90vw;
+                    margin-left: 0;
+                }
             }
         }
         
         .spread__content {
             display: flex;
-            // position: relative;
+
+            @include breakpoint-down(small) {
+                flex-direction: column;
+            }
             
             .circles {
                 display: flex;
                 align-items: center;
                 position: relative;
-                // left: calc(50% - 450px);
+
+                @include breakpoint-down(small) {
+                    order: 2;
+                    flex-direction: column;
+                }
                 
                 .maker-img {
                     height: 14.8rem;
                     position: relative;
+                    z-index: 1;
                 }
                 
                 .dotted {
                     @include dotted-line();
                     margin: 0 -3rem;
-                    // position: relative;
+
+                    @include breakpoint-down(small) {
+                        transform: rotate(90deg);
+                    }
                 }
                 
                 .spread-circle {
                     position: relative;
+
+                    @include breakpoint-down(small) {
+                        margin-top: 4rem;
+                    }
+
                     p {
                         font-size: 1rem;
                         white-space: nowrap;
@@ -215,6 +234,11 @@
                 min-width: 32rem;
                 padding: 5rem 4rem;
                 margin-left: 6rem;
+
+                @include breakpoint-down(small) {
+                    order: 1;
+                    margin-left: 0;
+                }
 
                 .spread__area {
                     position: relative;

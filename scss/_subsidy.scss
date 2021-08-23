@@ -19,11 +19,20 @@
         
         .subsidy__content {
             display: flex;
+
+            @include breakpoint-down(small) {
+                flex-direction: column;
+            }
             
             .circles {
                 display: flex;
                 align-items: center;
                 position: relative;
+
+                @include breakpoint-down(small) {
+                    order: 2;
+                    flex-direction: column;
+                }
                 
                 .maker-img {
                     height: 14.8rem;
@@ -34,16 +43,18 @@
                 .dotted {
                     @include dotted-line;
                     margin: 0 -3rem;
-                }
 
-                // .orange-line {
-                //     height: 200%;
-                //     width: 15%;
-                //     margin: 0 -5px;
-                // }
+                    @include breakpoint-down(small) {
+                        transform: rotate(90deg);
+                    }
+                }
                 
                 .subsidy-circle {
                     position: relative;
+
+                    @include breakpoint-down(small) {
+                        margin-top: 4rem;
+                    }
 
                     p {
                         font-size: 1rem;
@@ -114,6 +125,11 @@
                 min-width: 32rem;
                 padding: 5rem 4rem;
                 margin-left: 6rem;
+
+                @include breakpoint-down(small) {
+                    order: 1;
+                    margin-left: 0;
+                }
 
                 p {
                     min-width: 28.5rem;
