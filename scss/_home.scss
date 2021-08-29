@@ -3,16 +3,24 @@
     height: 10vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+    padding: 2rem;
+    // gap: 4rem;
+    // justify-content: center;
+    // display: block;
+    // position: absolute;
+    // top: 2rem;
+    // left: 1.6rem;
     
     
     @include breakpoint-down(small) {
         padding-top: 1rem;
         padding-right: 1rem;
+        align-items: flex-end;
     }
 
     .menu {
-        display: block;
+        // display: block;
         // position: absolute;
         // top: 2rem;
         // left: 1.6rem;
@@ -43,6 +51,10 @@
             height: 3px;
             background: $primary-color;
             @include transition-ease;
+
+            @include breakpoint-down(small) {
+
+            }
 
             &:before {
                 content: '';
@@ -80,7 +92,8 @@
     }
 
     .twitter {
-        top: 5rem;
+        position: relative;
+        top: 3rem;
 
         a {
             color: $primary-color;
@@ -98,10 +111,12 @@
 // トップページ
 .home {
     background-image: url(../img/top.jpg);
-    background-position: 40% 0;
 	background-repeat: no-repeat;
+    background-size: cover;
+    height: 65rem;
     
     @include breakpoint-down(small) {
+        background-position: 40% 0;
         height: 50rem;
     	background-size: cover;
     }

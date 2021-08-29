@@ -69,6 +69,7 @@
             .works__title {
                 padding: 0 20%;
                 display: flex;
+                align-items: center;
 
                 @include breakpoint-down(small) {
                     padding: 0 3%;
@@ -474,19 +475,24 @@
         text-align: center;
 
         &__title {
+            width: 70%;
             font-size: 1.8rem;
             margin-bottom: 2rem;
+            margin: 0 auto;
             position: relative;
 
             &::before {
                 content: "";
                 position: absolute;
-                left: 35%;
+                left: 15%;
                 height: 2.5rem;
                 width: 0;
                 border: solid 1px $primary-color;
                 transform: rotate(-45deg);
 
+                @include breakpoint-down(medium) {
+                    left: 2%;
+                }
                 @include breakpoint-down(small) {
                     left: 16vw;
                 }
@@ -494,11 +500,14 @@
             &::after {
                 content: "";
                 position: absolute;
-                right: 35%;
+                right: 15%;
                 height: 2.5rem;
                 border: solid 1px $primary-color;
                 transform: rotate(45deg);
 
+                @include breakpoint-down(medium) {
+                    right: 2%;
+                }
                 @include breakpoint-down(small) {
                     right: 16vw;
                 }
