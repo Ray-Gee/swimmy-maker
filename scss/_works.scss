@@ -57,7 +57,8 @@
 
             .setta-heading {
                 @include breakpoint-down(small) {
-                    top: 3rem;
+                    top: 6.5vh;
+                    left: 3vw;
                     font-size: 1.7rem;
                 }
             }

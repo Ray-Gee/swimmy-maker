@@ -1867,7 +1867,8 @@
 }
 @media (max-width: 39.9375em) {
   .works .works__company__area .setta-heading {
-    top: 3rem;
+    top: 6.5vh;
+    left: 3vw;
     font-size: 1.7rem;
   }
 }
