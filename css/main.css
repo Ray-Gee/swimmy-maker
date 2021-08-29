@@ -2239,11 +2239,6 @@
     left: 2%;
   }
 }
-@media (max-width: 39.9375em) {
-  .works .others__title::before {
-    left: 16vw;
-  }
-}
 .works .others__title::after {
   content: "";
   position: absolute;
@@ -2255,11 +2250,6 @@
 @media (max-width: 63.9375em) {
   .works .others__title::after {
     right: 2%;
-  }
-}
-@media (max-width: 39.9375em) {
-  .works .others__title::after {
-    right: 16vw;
   }
 }
 .works .others__img {

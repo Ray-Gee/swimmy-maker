@@ -494,9 +494,9 @@
                 @include breakpoint-down(medium) {
                     left: 2%;
                 }
-                @include breakpoint-down(small) {
-                    left: 16vw;
-                }
+                // @include breakpoint-down(small) {
+                //     left: 2%;
+                // }
             }
             &::after {
                 content: "";
@@ -509,9 +509,9 @@
                 @include breakpoint-down(medium) {
                     right: 2%;
                 }
-                @include breakpoint-down(small) {
-                    right: 16vw;
-                }
+                // @include breakpoint-down(small) {
+                //     right: 16vw;
+                // }
             }
         }
 
