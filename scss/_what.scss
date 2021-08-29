@@ -79,7 +79,7 @@
             align-items: center; 
 
             @include breakpoint-down(small) {
-                padding: 0.5rem 1.5rem;
+                left: calc(50% - 147px);
             }
 
             &::after {

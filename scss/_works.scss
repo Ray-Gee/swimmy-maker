@@ -25,6 +25,10 @@
     
             .boundary {
                 margin-top: 5rem;
+
+                @include breakpoint-down(small) {
+                    margin-top: 0;
+                }
             }
             
             h1 {
@@ -37,6 +41,18 @@
                 position: absolute;
                 top: 20rem;
                 left: 20rem;
+
+                @include breakpoint-down(small) {
+                    top: 8rem;
+                    left: 1rem;
+                }
+            }
+
+            .setta-heading {
+                @include breakpoint-down(small) {
+                    top: 3rem;
+                    font-size: 1.7rem;
+                }
             }
         }
     
@@ -47,6 +63,10 @@
                 padding: 0 20%;
                 display: flex;
 
+                @include breakpoint-down(small) {
+                    padding: 0 3%;
+                    justify-content: space-between;
+                }
                 .logo {
                     width: 17rem;
                 }
@@ -61,12 +81,20 @@
     
                 &__title {
                     padding: 0 20%;
+
+                    @include breakpoint-down(small) {
+                        padding: 0 3%;
+                    }
     
                     h3 {
                         font-size: 1.4rem;
                         padding-left: 2rem;
                         margin-bottom: 3rem;
                         border-left: 1.5px solid #000;
+
+                        @include breakpoint-down(small) {
+                            font-weight: bold;
+                        }
                     }
     
                     p {
@@ -83,6 +111,10 @@
                 &__img {
                     margin-left: 10rem;
                     text-align: center;
+
+                    @include breakpoint-down(small) {
+                        margin-left: 0;
+                    }
     
                     .detail {
                         font-size: 1.5rem;
@@ -106,6 +138,10 @@
                     img {
                         width: 100%;
                         min-width: 40rem;
+
+                        @include breakpoint-down(small) {
+                            min-width: 30rem;
+                        }
                     }
 
                     .profile__text {
@@ -116,9 +152,38 @@
                 .profile__list {
                     margin-top: 8rem;
 
+                    @include breakpoint-down(small) {
+                        margin-top: 2rem;
+                    }
+
                     h3 {
                         font-size: 1.7rem;
+                        @include breakpoint-down(small) {
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                            margin-bottom: 0;
+                        }
                         
+                        // &::before {
+                        //     content: '';
+                        //     display: inline-block;
+                        //     width: 5rem;
+                        //     height: 5rem;
+                        //     background-image: url(../img/gold.svg);
+                        //     background-size: contain;
+                        //     margin-right: 2rem;
+
+                        //     @include breakpoint-down(small) {
+                        //         margin-right: 0.5rem;
+                        //         vertical-align: middle;
+                        //     }
+                        // }
+
+                    }
+                    .profile-br {
+                        display: flex;
+                        align-items: center;
+
                         &::before {
                             content: '';
                             display: inline-block;
@@ -126,10 +191,15 @@
                             height: 5rem;
                             background-image: url(../img/gold.svg);
                             background-size: contain;
-                            vertical-align: middle;
                             margin-right: 2rem;
+
+                            @include breakpoint-down(small) {
+                                margin-right: 0.5rem;
+                                vertical-align: middle;
+                            }
                         }
                     }
+                    
 
                     p {
                         font-size: 1.3rem;
@@ -211,6 +281,11 @@
                     .kuretake-top, .designsetta-top {
                         display: flex;
                         padding: 0 20%;
+
+                        @include breakpoint-down(small) {
+                            padding: 0 3%;
+                            flex-direction: column;
+                        }
                     }
 
                     .kuretake-middle, .designsetta-middle {
@@ -220,11 +295,27 @@
                         align-items: center;
                         margin-right: 20%;
 
+                        @include breakpoint-down(small) {
+                            flex-direction: column;
+                            margin-right: 0;
+                            align-items: baseline;
+                        }
+
                         .kuretake__img-left {
+
+                            @include breakpoint-down(small) {
+                                margin: 0 auto;
+                            }
+
                             img {
                                 min-width: 42rem;
                                 width: 40vw;
                                 max-width: 50vw;
+
+                                @include breakpoint-down(small) {
+                                    min-width: 94vw;
+                                    width: 94vw;
+                                }
                             }
                         }
 
@@ -244,15 +335,31 @@
                             img {
                                 width: 50rem;
                             }
+
+                            @include breakpoint-down(small) {
+                                margin: 0 auto;
+                                img {
+                                    width: 94vw;
+                                }
+                            }
                         }
 
                         &__right {
                             margin-left: 10rem;
+
+                            @include breakpoint-down(small) {
+                                margin: 0;
+                                padding: 0 3%;
+                            }
                         }
                     }
 
                     .kuretake-bottom, .designsetta-bottom {
                         padding: 0 20%;
+
+                        @include breakpoint-down(small) {
+                            padding: 0 3%;
+                        }
                     }
 
                     
@@ -265,6 +372,10 @@
                             right: -70rem;
                             z-index: -1;
                             transform: rotate(135deg);
+                        }
+
+                        @include breakpoint-down(small) {
+                            display: none;
                         }
                     }
                     &__right {
@@ -287,6 +398,13 @@
         text-align: right;
         img {
             width: 60vw;
+        }
+
+        @include breakpoint-down(small) {
+           text-align: center;
+           img {
+            width: 94vw;
+           }
         }
     }
 
@@ -361,6 +479,10 @@
                 width: 0;
                 border: solid 1px $primary-color;
                 transform: rotate(-45deg);
+
+                @include breakpoint-down(small) {
+                    left: 16vw;
+                }
             }
             &::after {
                 content: "";
@@ -369,6 +491,10 @@
                 height: 2.5rem;
                 border: solid 1px $primary-color;
                 transform: rotate(45deg);
+
+                @include breakpoint-down(small) {
+                    right: 16vw;
+                }
             }
         }
 

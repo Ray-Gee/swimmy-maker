@@ -29,6 +29,10 @@
         .compare__content {
             display: flex;
             justify-content: center;
+
+            @include breakpoint-down(small) {
+                flex-direction: column;
+            }
             
             p {
                 font-size: 1.5rem;
@@ -41,11 +45,20 @@
                 margin-left: 4rem;
                 position: relative;
 
+                @include breakpoint-down(small) {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+
                 .dotted {
                     @include dotted-line($primary-color);
                     position: absolute;
                     top: 16rem;
                     left: 18rem;
+
+                    @include breakpoint-down(small) {
+                       left: 10rem;
+                    }
 
                     &:nth-child(2) {
                         transform: rotate(-35deg);
@@ -65,6 +78,10 @@
                 &__left {
                     img {
                         height: 18rem;
+
+                        @include breakpoint-down(small) {
+                           height: 10rem;
+                        }
                     }
                 }
                 

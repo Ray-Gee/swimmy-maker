@@ -11,7 +11,6 @@
 
     tr:not(:first-child):hover {
         background-color: #FBF5EE;
-        // cursor: pointer;
 
         td:first-child {
             background: $secondary-color;
@@ -34,11 +33,23 @@
         border-top-left-radius: 4rem;
         border-top-right-radius: 4rem;
         width: 24.8rem;
+
+        @include breakpoint-down(small) {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
     }
 
     td {
         padding: 1.3rem;
         border: solid 1px #D1D1D1;
+
+        @include breakpoint-down(small) {
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
     }
 
     p {
