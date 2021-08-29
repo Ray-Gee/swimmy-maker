@@ -2,6 +2,10 @@
     margin-bottom: 30rem;
     user-select: none;
 
+    @include breakpoint-down(small) {
+        margin-bottom: 20vh;
+    }
+
     &__lead {
         color: $secondary-color;
         font-size: 1.4rem;

@@ -98,3 +98,15 @@ h3 {
         display: none;
     }
 }
+
+.wrapper {
+
+    @include breakpoint-down(small) {
+        width: 100%;
+        overflow-x: hidden !important;
+    }
+}
+
+.sp-bottom {
+    margin-bottom: 2rem;
+}

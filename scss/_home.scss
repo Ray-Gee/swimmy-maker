@@ -1,48 +1,42 @@
 // サイドメニュー
 .aside {
-    position: absolute;
-
-    // @include breakpoint-down(small) {
-    //     position: absolute;
-    //     left: 90%;
-    // }
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+    @include breakpoint-down(small) {
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
 
     .menu {
-        position: absolute;
-        top: 2rem;
-        left: 1.6rem;
+        display: block;
+        // position: absolute;
+        // top: 2rem;
+        // left: 1.6rem;
 
         @include breakpoint-down(small) {
-            // position: absolute;
-            // top: 2rem;
-            // right: 1rem;
+            // left: 0;
+            // right: 0;
         }
     }
 
-    .twitter {
-        top: 5rem;
-
-        a {
-            color: $primary-color;
-        }
-
-        @include breakpoint-down(small) {
-            // position: absolute;
-            // top: 2rem;
-            // right: 1rem;
-        }
+    .menu-text {
+        font-size: 0.8rem;
+        letter-spacing: 0.2px;
     }
-
 
     .menu-btn {
-        position: absolute;
+        position: relative;
         height: 2rem;
         width: 2.8rem;
         cursor: pointer;
         @include transition-ease;
 
         &__burger {
-            position: absolute;
+            position: relative;
             right: 0;
             top: 0.5rem;
             width: 28px;
@@ -53,7 +47,7 @@
             &:before {
                 content: '';
                 position: absolute;
-                top: -8px;
+                // top: -8px;
                 width: 28px;
                 height: 3px;
                 background: $primary-color;
@@ -74,14 +68,28 @@
                 background: transparent;
 
                 &:before {
-                    transform: rotate(45deg) translate(5px, 8px);
+                    transform: rotate(45deg) translate(0px, 5px);
                 }
 
                 &:after {
                     width: 28px;
-                    transform: rotate(-45deg) translate(3px, -7px);
+                    transform: rotate(-45deg) translate(0px, -5px);
                 }
             }
+        }
+    }
+
+    .twitter {
+        top: 5rem;
+
+        a {
+            color: $primary-color;
+        }
+
+        @include breakpoint-down(small) {
+            position: relative;
+            top: 2rem;
+            // right: 1rem;
         }
     }
 
@@ -89,15 +97,32 @@
 
 // トップページ
 .home {
-    background: url(../img/top.jpg) no-repeat;
-    background-size: cover;
-    height: 80rem;
-
+    background-image: url(../img/top.jpg);
+    background-position: 40% 0;
+	background-repeat: no-repeat;
+    
     @include breakpoint-down(small) {
         height: 50rem;
-        width: 100vw;
-        object-position: 50% 100%;
+    	background-size: cover;
     }
+    // height: 50rem;
+    // background: url(../img/top.jpg) no-repeat;
+    // &__img {
+        
+    //     img {
+    //         height: 80rem;
+    //         // background-size: contain;
+            
+    //         @include breakpoint-down(small) {
+    //             background-size: contain;
+    //             background-position: right bottom; 
+                
+    //             height: 50rem;
+    //             // width: 100vw;
+    //             // object-position: 100% 100%;
+    //         }
+    //     }
+    // }
 
     &__title {
         position: relative;
@@ -105,8 +130,11 @@
         left: 22vw;
 
         @include breakpoint-down(small) {
-           top: 10vh;
-           left: 8vw;
+           top: 0;
+           left: 0;
+
+           padding-top: 1vh;
+           padding-left: 8vw;
         }
 
         &__sub {
@@ -115,9 +143,9 @@
 
             @include breakpoint-down(small) {
                 font-size: 2rem;
-                position: absolute;
-                top: 5.3rem;
-                left: -1.4rem;
+                position: relative;
+                top: 2rem;
+                left: -34.5rem;
             }
 
             &:after {

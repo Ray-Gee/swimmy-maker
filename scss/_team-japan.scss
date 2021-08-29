@@ -47,7 +47,7 @@
             left: 0rem;
 
             @include breakpoint-down(small) {
-
+                width: 48vw;
                 top: 4rem;
                 left: -44.8rem;
 
@@ -104,8 +104,8 @@
                 color: #fff;
                 font-weight: 100;
                 position: relative;
-                top: 0rem;
-                left: 63rem;
+                top: 0.5rem;
+                left: 61rem;
             }
         }
     }

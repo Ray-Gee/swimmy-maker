@@ -22,6 +22,7 @@
 
             @include breakpoint-down(small) {
                 margin-left: 0;
+                width: 94vw;
             }
             
             &__lead {
@@ -56,12 +57,12 @@
                     background-image: url(../img/people.png);
                     background-size: contain;
                     background-repeat: no-repeat;
-                    top: -35px;
+                    top: -3.5rem;
                     right: -135px;
 
                     @include breakpoint-down(small) {
                         top: 10rem;
-                        right: 0;
+                        right: -30vw;
                     }
                 }
             }

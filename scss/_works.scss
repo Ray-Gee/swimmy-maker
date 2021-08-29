@@ -42,9 +42,16 @@
                 top: 20rem;
                 left: 20rem;
 
+                // @include breakpoint-down(small) {
+                //     top: 8rem;
+                //     left: 1rem;
+                // }
+            }
+
+            .kuretake__heading {
                 @include breakpoint-down(small) {
-                    top: 8rem;
-                    left: 1rem;
+                    top: 4vh;
+                    left: 3vw;
                 }
             }
 

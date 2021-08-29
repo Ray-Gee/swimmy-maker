@@ -1,6 +1,6 @@
 .collaboration {
     
-    .collaboration__area {
+    &__area {
         margin-top: -7px;
         background-color: #C8E7E9;
         height: 60rem;
@@ -8,6 +8,18 @@
 
     .container__area {
         text-align: center;
+
+        @include breakpoint-down(small) {
+            text-align: left;
+        }
+    }
+
+    &__subtitle {
+
+        @include breakpoint-down(small) {
+            white-space: normal;
+            font-weight: bold;
+        }
     }
 
     &__title {
@@ -17,6 +29,16 @@
 
     &__lead {
         color: $secondary-color;
+    }
+
+    &__head {
+        @include breakpoint-down(small) {
+            font-size: 3rem;
+        }
+    }
+
+    &__content {
+        
     }
 
     &__img {
@@ -38,6 +60,10 @@
 
         img {
             width: 40rem;
+
+            @include breakpoint-down(small) {
+                width: 90vw;
+            }
         }
     };
     
@@ -48,6 +74,11 @@
             width: 80rem;
             position: absolute;
             left: -20rem;
+
+            @include breakpoint-down(small) {
+                width: 90vw;
+                left: 0;
+            }
         }
         
     }
@@ -60,6 +91,10 @@
         font-size: 1.4rem;
         align-items: center;
 
+        @include breakpoint-down(small) {
+            display: block;
+        }
+
         span {
             font-weight: bold;
         }
@@ -67,11 +102,22 @@
         .top-left {
             font-size: 2.4rem;
             font-weight: bold;
+
+            @include breakpoint-down(small) {
+                font-size: 1.7rem;
+                text-align: center;
+                font-weight: normal;
+                margin-bottom: 2rem;
+            }
         }
 
         .bg2 {
             width: 20rem;
             position: absolute;
+
+            @include breakpoint-down(small) {
+                display: none;
+            }
         }
 
         .middle-left {
@@ -90,18 +136,31 @@
     .boundary-fishes {
         width: 80%;
 
+        @include breakpoint-down(small) {
+            width: 100vw;
+        }
+
         img {
             width: 100%;
         }
 
         &::after {
-            content: url(../img/fishes@2x.png);
+            content: '';
             display: inline-block;
+            background-image: url(../img/fishes@2x.png);
+            background-size: cover;
             width: 10rem;
             height: 10rem;
             position: relative;
             top: -30rem;
             left: 85%;
+
+            @include breakpoint-down(small) {
+                width: 30vw;
+                height: 12vh;
+                top: -20vh;
+                left: 70vw;
+            }
         }
     }
 
