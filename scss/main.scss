@@ -100,7 +100,7 @@ h3 {
 }
 
 .wrapper {
-
+    max-width: 1400px;
     @include breakpoint-down(small) {
         width: 100%;
         overflow-x: hidden !important;
