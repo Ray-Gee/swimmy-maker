@@ -37,8 +37,7 @@ body {
     color: $primary-color;
     font-size: 1.6rem;
     letter-spacing: 0.12em;
-    font-family: "游ゴシック", "ヒラギノ角ゴProN", "メイリオ", "MS Pゴシック", sans-serif;
-
+    font-family: "游ゴシック", "游ゴシック体", "ヒラギノ角ゴProN", "メイリオ", "MS Pゴシック", sans-serif;
     @include breakpoint-down(small) {
         font-size: 1.3rem;
     }

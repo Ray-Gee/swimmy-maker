@@ -151,6 +151,7 @@
 }
 .home__sub-heading {
   letter-spacing: 0.4em;
+  font-weight: bold;
 }
 
 .right-btn {
@@ -2659,7 +2660,7 @@ body {
   color: #474359;
   font-size: 1.6rem;
   letter-spacing: 0.12em;
-  font-family: "游ゴシック", "ヒラギノ角ゴProN", "メイリオ", "MS Pゴシック", sans-serif;
+  font-family: "游ゴシック", "游ゴシック体", "ヒラギノ角ゴProN", "メイリオ", "MS Pゴシック", sans-serif;
 }
 @media (max-width: 39.9375em) {
   body {
@@ -2722,6 +2723,9 @@ h3 {
   .none-sp {
     display: none;
   }
+}
+.wrapper {
+  max-width: 1400px;
 }
 @media (max-width: 39.9375em) {
   .wrapper {
