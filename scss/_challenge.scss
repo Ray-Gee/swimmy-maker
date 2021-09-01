@@ -98,7 +98,6 @@
                     left: 7rem;
                     top: -1.7vh;
                     display: inline-block;
-                    // margin-left: auto;
                 }
             }
 
@@ -141,19 +140,6 @@
                 .main-img {
                     width: 35rem;
                 }
-
-                // .challenge__content__text {
-                //     @include challenge__box('01');
-                //     &::after{
-                //         @include breakpoint-down(small) {
-                //             top: 1rem;
-                //         }
-                //     }
-
-                //     @include breakpoint-down(small) {
-                //         left: 3rem;
-                //     }
-                // }
             }
 
             &__group2 {
@@ -186,7 +172,6 @@
                         margin-left: 2rem;
                     }
                 }
-
                 
                 .main-img {
                     height: 16.6rem;
@@ -196,33 +181,7 @@
                         left: calc(50% - 58px);
                     }
                 }
-                
-                // .challenge__content__text {
-                    // left: -1rem;
-
-                    // @include challenge__box('02');
-                    // &::after{
-                    //     left: -32rem;
-
-                    //     @include breakpoint-down(small) {
-                    //         left: -13rem;
-                    //         top: -8rem;
-                    //     }
-                    // }
-
-                //     @include breakpoint-down(small) {
-                //         left: 1.3rem;
-                //     }
-                // }
-
             }
-
-            // &__text {
-            //     font-size: 1.5rem;
-            //     position: relative;
-            //     top: 3rem;
-            //     left: -6rem;
-            // }
         }
     }
 }

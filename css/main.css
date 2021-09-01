@@ -273,13 +273,11 @@
   content: "";
   border-top: 1px solid #F28E3D;
   width: 3.5rem;
-  /* 線の長さ */
   margin-left: 2rem;
 }
 @media (max-width: 39.9375em) {
   .what__bottom .what__link::after {
     width: 1.8rem;
-    /* 線の長さ */
     margin-left: 0.5rem;
   }
 }
@@ -2723,9 +2721,6 @@ h3 {
   .none-sp {
     display: none;
   }
-}
-.wrapper {
-  max-width: 1400px;
 }
 @media (max-width: 39.9375em) {
   .wrapper {

@@ -41,11 +41,6 @@
                 position: absolute;
                 top: 20rem;
                 left: 20rem;
-
-                // @include breakpoint-down(small) {
-                //     top: 8rem;
-                //     left: 1rem;
-                // }
             }
 
             .kuretake__heading {
@@ -172,21 +167,6 @@
                             font-weight: bold;
                             margin-bottom: 0;
                         }
-                        
-                        // &::before {
-                        //     content: '';
-                        //     display: inline-block;
-                        //     width: 5rem;
-                        //     height: 5rem;
-                        //     background-image: url(../img/gold.svg);
-                        //     background-size: contain;
-                        //     margin-right: 2rem;
-
-                        //     @include breakpoint-down(small) {
-                        //         margin-right: 0.5rem;
-                        //         vertical-align: middle;
-                        //     }
-                        // }
 
                     }
                     .profile-br {
@@ -494,9 +474,6 @@
                 @include breakpoint-down(medium) {
                     left: 2%;
                 }
-                // @include breakpoint-down(small) {
-                //     left: 2%;
-                // }
             }
             &::after {
                 content: "";
@@ -509,9 +486,6 @@
                 @include breakpoint-down(medium) {
                     right: 2%;
                 }
-                // @include breakpoint-down(small) {
-                //     right: 16vw;
-                // }
             }
         }
 

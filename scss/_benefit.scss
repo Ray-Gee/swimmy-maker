@@ -2,7 +2,6 @@
     background: $background-color;
     margin-top: -5px;
 
-
     @include breakpoint-down(small) {
         .none-pc {
             text-align: center;
@@ -67,10 +66,8 @@
                 }
             }
         }
-
     }
 }
-
 
 .benefit-bottom__wrap {
     margin-top: 3rem;
@@ -101,7 +98,6 @@
                 position: absolute;
                 top: 4.5rem;
                 left: 2.7rem;
-
 
                 @include breakpoint-down(small) {
                     top: 5rem;
@@ -164,5 +160,4 @@
             padding: 0;
         }
     }
-
 }
